@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bda75hncsfvb0"]
+
+[ext_resource type="Texture2D" uid="uid://dppt5dompfovr" path="res://Backgrounds/Elements/groundLayer1.png" id="1_688p1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oltiy"]
+size = Vector2(1149.5, 98.5)
+
+[node name="Ground" type="StaticBody2D" unique_id=803207055]
+
+[node name="ColorRect" type="Sprite2D" parent="." unique_id=1019066439]
+position = Vector2(-12.999999, 552)
+scale = Vector2(1.1376953, 0.25249997)
+texture = ExtResource("1_688p1")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1888585567]
+position = Vector2(577.25, 601.25)
+shape = SubResource("RectangleShape2D_oltiy")

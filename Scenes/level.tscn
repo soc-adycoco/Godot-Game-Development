@@ -1,13 +1,20 @@
 [gd_scene format=3 uid="uid://bql4i8xsf5v3t"]
 
+[ext_resource type="PackedScene" uid="uid://bda75hncsfvb0" path="res://Scenes/ground.tscn" id="1_6phgx"]
 [ext_resource type="PackedScene" uid="uid://ckimhjuj0m1qs" path="res://Scenes/player.tscn" id="1_k5f4k"]
+[ext_resource type="PackedScene" uid="uid://cgwdg75nqeebd" path="res://Scenes/obstacle.tscn" id="3_6phgx"]
 
 [node name="Level" type="Node2D" unique_id=1404980598]
 
-[node name="Background" type="Sprite2D" parent="." unique_id=796221659]
-position = Vector2(604, 267)
-scale = Vector2(1.2236328, 1)
+[node name="Placeholder BG" type="ColorRect" parent="." unique_id=1943062220]
+offset_right = 1187.0
+offset_bottom = 696.0
+color = Color(0.32226244, 0.65839994, 0.35422617, 1)
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=297589594]
+[node name="Ground" parent="." unique_id=803207055 instance=ExtResource("1_6phgx")]
+
+[node name="Obstacle" parent="." unique_id=2062863384 instance=ExtResource("3_6phgx")]
+position = Vector2(549, 493)
 
 [node name="Player" parent="." unique_id=1758742537 instance=ExtResource("1_k5f4k")]
+position = Vector2(126, 482)
