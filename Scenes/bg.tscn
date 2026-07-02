@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cc4obk4y7fo5k"]
 
-[ext_resource type="Texture2D" uid="uid://xynkqhxm36fl" path="res://Backgrounds/backgroundColorForest.png" id="1_sjcup"]
+[ext_resource type="Texture2D" uid="uid://xynkqhxm36fl" path="res://Assets/Backgrounds/backgroundColorForest.png" id="1_sjcup"]
 
 [node name="BG" type="Parallax2D" unique_id=71575663]
 repeat_size = Vector2(1024, 0)
