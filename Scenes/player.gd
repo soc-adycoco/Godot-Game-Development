@@ -9,7 +9,16 @@ func _physics_process(delta: float) -> void:
 	velocity.y += GRAVITY * delta
 
 	# Handle jump - holding down jump key makes player continuously jump
-	if Input.is_action_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-
+	if is_on_floor():
+		#$RunCollision.disabled = false
+		if Input.is_action_pressed("ui_accept"):
+			velocity.y = JUMP_VELOCITY
+		elif Input.is_action_pressed("ui_down"):
+			$PlayerImage.play("duck")
+			$RunCollision.disabled = true
+		else:
+			$PlayerImage.play("run")
+	else:
+		$PlayerImage.play("fly")
+		
 	move_and_slide()
