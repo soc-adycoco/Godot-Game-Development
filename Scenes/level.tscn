@@ -3,9 +3,11 @@
 [ext_resource type="PackedScene" uid="uid://bda75hncsfvb0" path="res://Scenes/ground.tscn" id="1_6phgx"]
 [ext_resource type="PackedScene" uid="uid://cc4obk4y7fo5k" path="res://Scenes/bg.tscn" id="1_81xng"]
 [ext_resource type="PackedScene" uid="uid://ckimhjuj0m1qs" path="res://Scenes/player.tscn" id="1_k5f4k"]
+[ext_resource type="Script" uid="uid://dehq7rcp5ohhi" path="res://Scenes/level.gd" id="1_wqkje"]
 [ext_resource type="PackedScene" uid="uid://cgwdg75nqeebd" path="res://Scenes/obstacle.tscn" id="3_6phgx"]
 
 [node name="Level" type="Node2D" unique_id=1404980598]
+script = ExtResource("1_wqkje")
 
 [node name="BG" parent="." unique_id=71575663 instance=ExtResource("1_81xng")]
 
@@ -16,3 +18,6 @@ position = Vector2(549, 493)
 
 [node name="Player" parent="." unique_id=1758742537 instance=ExtResource("1_k5f4k")]
 position = Vector2(192, 447)
+
+[node name="Camera" type="Camera2D" parent="." unique_id=1602047086]
+position = Vector2(576, 324)
