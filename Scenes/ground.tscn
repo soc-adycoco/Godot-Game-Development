@@ -7,7 +7,7 @@ size = Vector2(2045.5, 98.5)
 
 [node name="Ground" type="StaticBody2D" unique_id=803207055]
 
-[node name="ColorRect" type="Sprite2D" parent="." unique_id=1019066439]
+[node name="Image" type="Sprite2D" parent="." unique_id=1019066439]
 texture = ExtResource("1_688p1")
 centered = false
 offset = Vector2(0, 552)
