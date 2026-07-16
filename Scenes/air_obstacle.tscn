@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bltp1xlwrhdll"]
+
+[ext_resource type="Texture2D" uid="uid://dghqabmk3qj84" path="res://Assets/PNG/Default/sun.png" id="1_17ihk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o1ryt"]
+radius = 36.221542
+
+[node name="AirObstacle" type="Area2D" unique_id=1858900783]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1999238852]
+texture = ExtResource("1_17ihk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1537684294]
+position = Vector2(4, 4)
+shape = SubResource("CircleShape2D_o1ryt")

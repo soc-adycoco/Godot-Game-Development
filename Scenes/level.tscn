@@ -4,7 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://cc4obk4y7fo5k" path="res://Scenes/bg.tscn" id="1_81xng"]
 [ext_resource type="PackedScene" uid="uid://ckimhjuj0m1qs" path="res://Scenes/player.tscn" id="1_k5f4k"]
 [ext_resource type="Script" uid="uid://dehq7rcp5ohhi" path="res://Scenes/level.gd" id="1_wqkje"]
-[ext_resource type="PackedScene" uid="uid://cgwdg75nqeebd" path="res://Scenes/obstacle.tscn" id="3_6phgx"]
+[ext_resource type="PackedScene" uid="uid://cgwdg75nqeebd" path="res://Scenes/ground_obstacle.tscn" id="3_6phgx"]
+[ext_resource type="PackedScene" uid="uid://bltp1xlwrhdll" path="res://Scenes/air_obstacle.tscn" id="5_0f350"]
 
 [node name="Level" type="Node2D" unique_id=1404980598]
 script = ExtResource("1_wqkje")
@@ -13,8 +14,11 @@ script = ExtResource("1_wqkje")
 
 [node name="Ground" parent="." unique_id=803207055 instance=ExtResource("1_6phgx")]
 
-[node name="Obstacle" parent="." unique_id=2062863384 instance=ExtResource("3_6phgx")]
-position = Vector2(549, 493)
+[node name="GroundObstacle" parent="." unique_id=2062863384 instance=ExtResource("3_6phgx")]
+position = Vector2(574, 519)
+
+[node name="AirObstacle" parent="." unique_id=1858900783 instance=ExtResource("5_0f350")]
+position = Vector2(805, 324)
 
 [node name="Player" parent="." unique_id=1758742537 instance=ExtResource("1_k5f4k")]
 position = Vector2(192, 447)

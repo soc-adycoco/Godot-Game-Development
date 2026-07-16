@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://xehqldkh1kgb" path="res://Assets/Backgrounds/backgroundColorDesert.png" id="1_688p1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oltiy"]
-size = Vector2(2045.5, 98.5)
+size = Vector2(3069.5, 98.5)
 
 [node name="Ground" type="StaticBody2D" unique_id=803207055]
 
@@ -12,8 +12,8 @@ texture = ExtResource("1_688p1")
 centered = false
 offset = Vector2(0, 552)
 region_enabled = true
-region_rect = Rect2(0, 928, 2048, 96)
+region_rect = Rect2(0, 928, 3072, 96)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1888585567]
-position = Vector2(1025.25, 601.25)
+position = Vector2(1537.25, 601.25)
 shape = SubResource("RectangleShape2D_oltiy")
