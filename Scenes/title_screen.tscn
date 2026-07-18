@@ -1,3 +1,63 @@
 [gd_scene format=3 uid="uid://dft0r748oxpc6"]
 
-[node name="TitleScreen" type="Node2D" unique_id=1760266710]
+[node name="TitleScreen" type="Control" unique_id=515661801]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StartButton" type="Button" parent="." unique_id=1825051415]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.25
+offset_top = -99.75
+offset_right = 101.25
+offset_bottom = 19.75
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 30
+text = "Play"
+
+[node name="TutorialButton" type="Button" parent="." unique_id=1925057768]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -106.0
+offset_top = 40.5
+offset_right = 106.0
+offset_bottom = 167.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Tutorial"
+
+[node name="Title" type="Label" parent="." unique_id=446000266]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -176.75
+offset_top = -229.25
+offset_right = 176.75
+offset_bottom = -122.75
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "Bird Runner"
+horizontal_alignment = 1
+vertical_alignment = 1
