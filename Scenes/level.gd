@@ -4,7 +4,7 @@ extends Node2D
 var speed
 const START_SPEED = 8.0
 var screensize
-var score : int
+var score = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -18,7 +18,10 @@ func _process(delta: float) -> void:
 	$Camera.position.x += speed
 	
 	score += speed
-	print(score)
+	show_score()
 	
 	if $Camera.position.x - $Ground.position.x > screensize.x * 1.5:
 		$Ground.position.x += screensize.x
+
+func show_score():
+	$HUD.get_node("ScoreLabel").text = "Score: " + str(score)

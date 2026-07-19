@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://cs0w6u25qp4r5"]
 
-[node name="HUD" type="Node2D" unique_id=678169666]
+[node name="HUD" type="CanvasLayer" unique_id=211630167]
 
-[node name="Score" type="Label" parent="." unique_id=1211964936]
-offset_right = 51.0
-offset_bottom = 23.0
-text = "SCORE"
+[node name="ScoreLabel" type="Label" parent="." unique_id=1211964936]
+offset_right = 203.0
+offset_bottom = 94.0
+theme_override_font_sizes/font_size = 30
+text = "Score: "
 horizontal_alignment = 1
 vertical_alignment = 1
