@@ -1,12 +1,13 @@
 [gd_scene format=3 uid="uid://cc4obk4y7fo5k"]
 
-[ext_resource type="Texture2D" uid="uid://xynkqhxm36fl" path="res://Assets/Backgrounds/backgroundColorForest.png" id="1_sjcup"]
+[ext_resource type="Texture2D" uid="uid://43lfyw1042ru" path="res://Assets/Meadow 1.png" id="1_sjcup"]
 
 [node name="BG" type="Parallax2D" unique_id=71575663]
 repeat_size = Vector2(1024, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1992646609]
+scale = Vector2(0.75, 0.75)
 texture = ExtResource("1_sjcup")
 centered = false
 region_enabled = true
-region_rect = Rect2(0, 184, 1024, 608)
+region_rect = Rect2(0, 184, 1536, 848)

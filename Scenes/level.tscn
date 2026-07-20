@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cgwdg75nqeebd" path="res://Scenes/ground_obstacle.tscn" id="3_6phgx"]
 [ext_resource type="PackedScene" uid="uid://bltp1xlwrhdll" path="res://Scenes/air_obstacle.tscn" id="5_0f350"]
 [ext_resource type="PackedScene" uid="uid://cs0w6u25qp4r5" path="res://Scenes/hud.tscn" id="7_8c0lf"]
+[ext_resource type="AudioStream" uid="uid://dccoa4obqdwqa" path="res://Assets/Audio/SFX/404794__owlstorm__retro-video-game-sfx-hop.wav" id="8_754fn"]
 
 [node name="Level" type="Node2D" unique_id=1404980598]
 script = ExtResource("1_wqkje")
@@ -28,3 +29,7 @@ position = Vector2(192, 447)
 position = Vector2(576, 324)
 
 [node name="HUD" parent="." unique_id=678169666 instance=ExtResource("7_8c0lf")]
+
+[node name="BGMusic" type="AudioStreamPlayer" parent="." unique_id=573283985]
+stream = ExtResource("8_754fn")
+autoplay = true

@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://m5e0glhaomhh" path="res://Assets/pigeon_eat-Sheet.png" id="2_vgqql"]
 [ext_resource type="Texture2D" uid="uid://cjplrhvlvhqfw" path="res://Assets/pigeon_fiy-Sheet.png" id="3_fkybt"]
 [ext_resource type="Texture2D" uid="uid://cjbhscmpy1uh" path="res://Assets/pigeon_walking-Sheet.png" id="4_x3wgy"]
+[ext_resource type="AudioStream" uid="uid://dccoa4obqdwqa" path="res://Assets/Audio/SFX/404794__owlstorm__retro-video-game-sfx-hop.wav" id="5_fkybt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3smsa"]
 atlas = ExtResource("2_vgqql")
@@ -138,3 +139,9 @@ shape = SubResource("RectangleShape2D_wpjfl")
 [node name="DuckCollision" type="CollisionShape2D" parent="." unique_id=84433812]
 position = Vector2(-2.5, 6.5)
 shape = SubResource("RectangleShape2D_olqyp")
+
+[node name="JumpSFX" type="AudioStreamPlayer2D" parent="." unique_id=1303781161]
+stream = ExtResource("5_fkybt")
+
+[node name="DuckSFX" type="AudioStreamPlayer2D" parent="." unique_id=729426002]
+stream = ExtResource("5_fkybt")
