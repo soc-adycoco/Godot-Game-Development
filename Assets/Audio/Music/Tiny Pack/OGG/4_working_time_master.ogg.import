@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b8lvopwgyo4cm"
+path="res://.godot/imported/4_working_time_master.ogg-95f33c66b80423ab4c720f6f265a1817.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/Tiny Pack/OGG/4_working_time_master.ogg"
+dest_files=["res://.godot/imported/4_working_time_master.ogg-95f33c66b80423ab4c720f6f265a1817.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

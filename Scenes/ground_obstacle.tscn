@@ -1,16 +1,18 @@
 [gd_scene format=3 uid="uid://cgwdg75nqeebd"]
 
 [ext_resource type="Script" uid="uid://byehlt6hccw3s" path="res://Scenes/obstacle.gd" id="1_2p81s"]
-[ext_resource type="Texture2D" uid="uid://c5ynd8f4hjykt" path="res://Assets/PNG/Default/bushOrange1.png" id="2_2p81s"]
+[ext_resource type="Texture2D" uid="uid://0pdx3ge3y0nh" path="res://Assets/Obstacles/Tiles/tile_0089.png" id="2_6ihi1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rvx1i"]
-size = Vector2(128, 64)
+size = Vector2(96, 80)
 
 [node name="GroundObstacle" type="Area2D" unique_id=2062863384]
 script = ExtResource("1_2p81s")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=492233088]
-texture = ExtResource("2_2p81s")
+texture_filter = 1
+scale = Vector2(6, 6)
+texture = ExtResource("2_6ihi1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1089315293]
 shape = SubResource("RectangleShape2D_rvx1i")

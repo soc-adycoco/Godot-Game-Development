@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d2jfpcay8m7kn"
+path="res://.godot/imported/4_working_time_master.mp3-d0991bc638e485be17b235fa1a348e1b.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/Tiny Pack/MP3/4_working_time_master.mp3"
+dest_files=["res://.godot/imported/4_working_time_master.mp3-d0991bc638e485be17b235fa1a348e1b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -7,8 +7,6 @@ const JUMP_VELOCITY = -1200.0
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	velocity.y += GRAVITY * delta
-	
-	
 
 	# Handle jump - holding down jump key makes player continuously jump
 	if is_on_floor():

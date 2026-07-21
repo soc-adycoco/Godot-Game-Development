@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ct1hm4eyw36fm"
+path="res://.godot/imported/24_too_late!_stinger_master.ogg-a392aa1523a5fd15e9b5f48e669615dd.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/Tiny Pack/OGG/24_too_late!_stinger_master.ogg"
+dest_files=["res://.godot/imported/24_too_late!_stinger_master.ogg-a392aa1523a5fd15e9b5f48e669615dd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://brmdnekfim313"
+path="res://.godot/imported/5_frog_pond_master.ogg-6fa4783865b101f1fd7619f00c9c92d1.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/Tiny Pack/OGG/5_frog_pond_master.ogg"
+dest_files=["res://.godot/imported/5_frog_pond_master.ogg-6fa4783865b101f1fd7619f00c9c92d1.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
