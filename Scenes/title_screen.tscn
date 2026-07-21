@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dft0r748oxpc6"]
 
-[ext_resource type="Texture2D" uid="uid://di6jayq8jh4w6" path="res://Assets/Backgrounds/backgroundColorGrass.png" id="1_klylv"]
+[ext_resource type="Texture2D" uid="uid://43lfyw1042ru" path="res://Assets/Meadow 1.png" id="1_klylv"]
+[ext_resource type="FontFile" uid="uid://cw0hfw4sjeamc" path="res://Assets/Fonts/VT323-Regular.ttf" id="2_p3fck"]
 
 [node name="TitleScreen" type="Control" unique_id=515661801]
 layout_mode = 3
@@ -10,11 +11,10 @@ offset_bottom = 648.0
 
 [node name="Background" type="TextureRect" parent="." unique_id=465799678]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+offset_top = -88.0
+offset_right = 1536.0
+offset_bottom = 936.0
+scale = Vector2(0.75, 0.75)
 texture = ExtResource("1_klylv")
 
 [node name="Title" type="Label" parent="." unique_id=446000266]
@@ -31,7 +31,8 @@ offset_bottom = -138.75
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.16206557, 0.1620656, 0.16206557, 1)
-theme_override_font_sizes/font_size = 60
+theme_override_fonts/font = ExtResource("2_p3fck")
+theme_override_font_sizes/font_size = 90
 text = "Bird Runner"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -51,7 +52,8 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_font_sizes/font_size = 30
+theme_override_fonts/font = ExtResource("2_p3fck")
+theme_override_font_sizes/font_size = 40
 text = "Play"
 
 [node name="TutorialButton" type="Button" parent="." unique_id=1925057768]
@@ -67,5 +69,6 @@ offset_right = 106.0
 offset_bottom = 167.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 30
+theme_override_fonts/font = ExtResource("2_p3fck")
+theme_override_font_sizes/font_size = 40
 text = "Tutorial"

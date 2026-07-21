@@ -1,13 +1,19 @@
 [gd_scene format=3 uid="uid://bltp1xlwrhdll"]
 
 [ext_resource type="Texture2D" uid="uid://dsyuh45t3xcuc" path="res://Assets/Obstacles/EnemyBird/01.png" id="1_4eb7l"]
-[ext_resource type="Script" uid="uid://dmt7rpwqghvyw" path="res://Scenes/air_obstacle.gd" id="1_86ev1"]
 [ext_resource type="Texture2D" uid="uid://bqnjwlhrmyig5" path="res://Assets/Obstacles/EnemyBird/02.png" id="2_86ev1"]
 [ext_resource type="Texture2D" uid="uid://bx7jiygg8cpb4" path="res://Assets/Obstacles/EnemyBird/03.png" id="3_8mrq6"]
 [ext_resource type="Texture2D" uid="uid://rhhac3fgr2l8" path="res://Assets/Obstacles/EnemyBird/04.png" id="4_6c3p1"]
 [ext_resource type="Texture2D" uid="uid://btsua5kmy432r" path="res://Assets/Obstacles/EnemyBird/05.png" id="5_e2141"]
 [ext_resource type="Texture2D" uid="uid://dkg71paweo4bu" path="res://Assets/Obstacles/EnemyBird/06.png" id="6_awdy4"]
 [ext_resource type="Texture2D" uid="uid://bhxlyjbaq2s7m" path="res://Assets/Obstacles/EnemyBird/07.png" id="7_gm1yu"]
+
+[sub_resource type="GDScript" id="GDScript_4eb7l"]
+script/source = "extends Area2D
+
+func _physics_process(delta: float) -> void:
+	$EnemyImage.play(\"enemy_fly\")
+"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2vbwf"]
 animations = [{
@@ -41,14 +47,15 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ntek2"]
 size = Vector2(119, 64)
 
-[node name="AirObstacle" type="CharacterBody2D" unique_id=920464831]
-script = ExtResource("1_86ev1")
+[node name="AirObstacle" type="Area2D" unique_id=278548053]
+script = SubResource("GDScript_4eb7l")
 
 [node name="EnemyImage" type="AnimatedSprite2D" parent="." unique_id=133422061]
 texture_filter = 1
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_2vbwf")
 animation = &"enemy_fly"
+autoplay = "enemy_fly"
 frame = 3
 frame_progress = 0.07345179
 

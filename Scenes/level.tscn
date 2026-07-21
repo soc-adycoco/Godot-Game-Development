@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cgwdg75nqeebd" path="res://Scenes/ground_obstacle.tscn" id="3_6phgx"]
 [ext_resource type="PackedScene" uid="uid://bltp1xlwrhdll" path="res://Scenes/air_obstacle.tscn" id="5_0f350"]
 [ext_resource type="PackedScene" uid="uid://cs0w6u25qp4r5" path="res://Scenes/hud.tscn" id="7_8c0lf"]
-[ext_resource type="AudioStream" uid="uid://dccoa4obqdwqa" path="res://Assets/Audio/SFX/404794__owlstorm__retro-video-game-sfx-hop.wav" id="8_754fn"]
+[ext_resource type="AudioStream" uid="uid://doisqgrel8ert" path="res://Assets/Audio/Music/Tiny Pack/MP3/1_new_life_master.mp3" id="8_754fn"]
 
 [node name="Level" type="Node2D" unique_id=1404980598]
 script = ExtResource("1_wqkje")
@@ -17,10 +17,10 @@ script = ExtResource("1_wqkje")
 [node name="Ground" parent="." unique_id=803207055 instance=ExtResource("1_6phgx")]
 
 [node name="GroundObstacle" parent="." unique_id=2062863384 instance=ExtResource("3_6phgx")]
-position = Vector2(574, 519)
+position = Vector2(1050, 513)
 
 [node name="AirObstacle" parent="." unique_id=1858900783 instance=ExtResource("5_0f350")]
-position = Vector2(805, 324)
+position = Vector2(1304, 388)
 
 [node name="Player" parent="." unique_id=1758742537 instance=ExtResource("1_k5f4k")]
 position = Vector2(192, 447)

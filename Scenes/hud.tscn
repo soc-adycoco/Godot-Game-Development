@@ -1,11 +1,14 @@
 [gd_scene format=3 uid="uid://cs0w6u25qp4r5"]
 
+[ext_resource type="FontFile" uid="uid://cw0hfw4sjeamc" path="res://Assets/Fonts/VT323-Regular.ttf" id="1_e0onf"]
+
 [node name="HUD" type="CanvasLayer" unique_id=211630167]
 
 [node name="ScoreLabel" type="Label" parent="." unique_id=1211964936]
 offset_right = 203.0
 offset_bottom = 94.0
-theme_override_font_sizes/font_size = 30
+theme_override_fonts/font = ExtResource("1_e0onf")
+theme_override_font_sizes/font_size = 50
 text = "Score: "
 horizontal_alignment = 1
 vertical_alignment = 1
