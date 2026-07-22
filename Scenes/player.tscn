@@ -128,9 +128,8 @@ script = ExtResource("1_cvnsp")
 [node name="PlayerImage" type="AnimatedSprite2D" parent="." unique_id=1918165130]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_l6n3p")
-animation = &"run"
+animation = &"duck"
 autoplay = "run"
-frame_progress = 0.14510597
 
 [node name="RunCollision" type="CollisionShape2D" parent="." unique_id=39531646]
 position = Vector2(-2.5, 1.5)
