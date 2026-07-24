@@ -47,7 +47,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ntek2"]
 size = Vector2(119, 64)
 
-[node name="AirObstacle" type="Area2D" unique_id=278548053]
+[node name="FlyingObstacle" type="Area2D" unique_id=278548053]
 script = SubResource("GDScript_4eb7l")
 
 [node name="EnemyImage" type="AnimatedSprite2D" parent="." unique_id=133422061]

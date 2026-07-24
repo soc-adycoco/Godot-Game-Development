@@ -1,5 +1,8 @@
 extends Node2D
 
+var ground_obstacle_scene = preload("res://Scenes/ground_obstacle.tscn")
+var flying_obstacle_scene = 
+
 #Variables and constants
 var speed
 const START_SPEED = 8.0
