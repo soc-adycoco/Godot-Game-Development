@@ -8,6 +8,7 @@ size = Vector2(96, 80)
 
 [node name="GroundObstacle" type="Area2D" unique_id=2062863384]
 script = ExtResource("1_2p81s")
+spawnpoint = Vector2(350, 150)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=492233088]
 texture_filter = 1

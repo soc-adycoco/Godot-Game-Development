@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bhxlyjbaq2s7m" path="res://Assets/Obstacles/EnemyBird/07.png" id="7_gm1yu"]
 
 [sub_resource type="GDScript" id="GDScript_4eb7l"]
-script/source = "extends Area2D
+script/source = "extends Obstacle
 
 func _physics_process(delta: float) -> void:
 	$EnemyImage.play(\"enemy_fly\")
@@ -49,6 +49,7 @@ size = Vector2(119, 64)
 
 [node name="FlyingObstacle" type="Area2D" unique_id=278548053]
 script = SubResource("GDScript_4eb7l")
+spawnpoint = Vector2(350, 150)
 
 [node name="EnemyImage" type="AnimatedSprite2D" parent="." unique_id=133422061]
 texture_filter = 1

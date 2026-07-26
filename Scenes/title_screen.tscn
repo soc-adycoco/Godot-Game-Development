@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://dft0r748oxpc6"]
 
+[ext_resource type="Script" uid="uid://q5hamjakj8mf" path="res://Scenes/title_screen.gd" id="1_4gxqj"]
 [ext_resource type="Texture2D" uid="uid://43lfyw1042ru" path="res://Assets/Meadow 1.png" id="1_klylv"]
 [ext_resource type="FontFile" uid="uid://cw0hfw4sjeamc" path="res://Assets/Fonts/VT323-Regular.ttf" id="2_p3fck"]
 
@@ -8,6 +9,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 1152.0
 offset_bottom = 648.0
+script = ExtResource("1_4gxqj")
 
 [node name="Background" type="TextureRect" parent="." unique_id=465799678]
 layout_mode = 1
@@ -72,3 +74,5 @@ grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_p3fck")
 theme_override_font_sizes/font_size = 40
 text = "Tutorial"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]

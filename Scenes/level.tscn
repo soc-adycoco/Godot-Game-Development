@@ -25,3 +25,8 @@ position = Vector2(576, 324)
 [node name="BGMusic" type="AudioStreamPlayer" parent="." unique_id=573283985]
 stream = ExtResource("8_754fn")
 autoplay = true
+
+[node name="ObstacleSpawnTimer" type="Timer" parent="." unique_id=1510335751]
+autostart = true
+
+[connection signal="timeout" from="ObstacleSpawnTimer" to="." method="_on_obstacle_spawn_timer_timeout"]
