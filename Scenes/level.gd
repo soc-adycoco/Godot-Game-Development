@@ -2,21 +2,21 @@ extends Node2D
 
 var ground_obstacle_scene = preload("res://Scenes/ground_obstacle.tscn")
 var flying_obstacle_scene = preload("res://Scenes/flying_obstacle.tscn")
-var obstacles : Array
+var obstacles : Array = [ground_obstacle_scene, flying_obstacle_scene]
 
 #Variables and constants
 var speed = 0
 const START_SPEED = 8.0
 var screen_size
 var score
-var ground_height : int
 var game_running : bool
-var last_obstacle
+
+const FLYING_Y = 350
+const GROUND_Y = 515
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	screen_size = get_window().size
-	ground_height = 96
 	new_game()
 	
 func new_game():
@@ -26,12 +26,15 @@ func new_game():
 	
 	$HUD.get_node("StartLabel").show()
 
+
+func _on_obstacle_spawn_timer_timeout() -> void:
+	spawn_obstacle()
+
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if game_running:
 		speed = START_SPEED
-		
-		spawn_obstacle()
 		
 		$Player.position.x += speed
 		$Camera.position.x += speed
@@ -48,19 +51,14 @@ func _process(delta: float) -> void:
 			$HUD.get_node("StartLabel").hide()
 
 func spawn_obstacle():
-	if obstacles.is_empty() or last_obstacle.position.x < score / 10 + randi_range(300, 500):
-		var obstacle
-		obstacle = ground_obstacle_scene.instantiate()
-		var obstacle_height = 16
-		var obstacle_x : int = screen_size.x + speed + 100
-		var obstacle_y : int = screen_size.y - ground_height - (obstacle_height * 6  / 2) + 5
-		last_obstacle = obstacle
-		add_obstacle(obstacle, obstacle_x, obstacle_y)
-		
-func add_obstacle(obstacle, x, y):
-	obstacle.position = Vector2i(x, y)
-	add_child(obstacle)
-	obstacles.append(obstacle)
+	var chosen_obstacle = obstacles.pick_random()
+	var obstacle_node = chosen_obstacle.instantiate()
+	var spawn_x = $Camera.position.x + 1240
+	if chosen_obstacle == flying_obstacle_scene:
+		obstacle_node.position = Vector2i(spawn_x, FLYING_Y)
+	else:
+		obstacle_node.position = Vector2i(spawn_x, GROUND_Y)
+	add_child(obstacle_node)
 
 func show_score():
 	$HUD.get_node("ScoreLabel").text = "Score: " + str(score)

@@ -12,7 +12,7 @@
 script/source = "extends Obstacle
 
 func _physics_process(delta: float) -> void:
-	$EnemyImage.play(\"enemy_fly\")
+	$Sprite2D.play(\"enemy_fly\")
 "
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2vbwf"]
@@ -49,9 +49,9 @@ size = Vector2(119, 64)
 
 [node name="FlyingObstacle" type="Area2D" unique_id=278548053]
 script = SubResource("GDScript_4eb7l")
-spawnpoint = Vector2(350, 150)
+spawnpoint = Vector2(1152, 300)
 
-[node name="EnemyImage" type="AnimatedSprite2D" parent="." unique_id=133422061]
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=133422061]
 texture_filter = 1
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_2vbwf")

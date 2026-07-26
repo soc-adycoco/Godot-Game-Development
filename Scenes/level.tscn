@@ -29,4 +29,7 @@ autoplay = true
 [node name="ObstacleSpawnTimer" type="Timer" parent="." unique_id=1510335751]
 autostart = true
 
+[node name="Marker2D" type="Marker2D" parent="." unique_id=140090879]
+position = Vector2(1222, 530)
+
 [connection signal="timeout" from="ObstacleSpawnTimer" to="." method="_on_obstacle_spawn_timer_timeout"]
