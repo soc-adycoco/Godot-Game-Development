@@ -5,7 +5,7 @@
 [node name="HUD" type="CanvasLayer" unique_id=211630167]
 
 [node name="ScoreLabel" type="Label" parent="." unique_id=1211964936]
-offset_right = 300.0
+offset_right = 238.0
 offset_bottom = 100.0
 theme_override_fonts/font = ExtResource("1_e0onf")
 theme_override_font_sizes/font_size = 50

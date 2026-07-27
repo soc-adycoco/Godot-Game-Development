@@ -11,7 +11,7 @@ var screen_size
 var score
 var game_running : bool
 
-const FLYING_Y = 350
+const FLYING_Y = 355
 const GROUND_Y = 515
 
 # Called when the node enters the scene tree for the first time.
@@ -51,15 +51,16 @@ func _process(delta: float) -> void:
 			$HUD.get_node("StartLabel").hide()
 
 func spawn_obstacle():
-	var chosen_obstacle = obstacles.pick_random()
-	var obstacle_node = chosen_obstacle.instantiate()
-	var spawn_x = $Camera.position.x + 1240
-	if chosen_obstacle == flying_obstacle_scene:
-		obstacle_node.position = Vector2i(spawn_x, FLYING_Y)
-	else:
-		obstacle_node.position = Vector2i(spawn_x, GROUND_Y)
-	obstacle_node.body_entered.connect(hit_obstacle)
-	add_child(obstacle_node)
+	if game_running:
+		var chosen_obstacle = obstacles.pick_random()
+		var obstacle_node = chosen_obstacle.instantiate()
+		var spawn_x = $Camera.position.x + 1240
+		if chosen_obstacle == flying_obstacle_scene:
+			obstacle_node.position = Vector2i(spawn_x, FLYING_Y)
+		else:
+			obstacle_node.position = Vector2i(spawn_x, GROUND_Y)
+		obstacle_node.body_entered.connect(hit_obstacle)
+		add_child(obstacle_node)
 
 func hit_obstacle(body):
 	if body.name == "Player":

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://0pdx3ge3y0nh" path="res://Assets/Obstacles/Tiles/tile_0089.png" id="2_6ihi1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rvx1i"]
-size = Vector2(96, 80)
+size = Vector2(96, 72)
 
 [node name="GroundObstacle" type="Area2D" unique_id=2062863384]
 script = ExtResource("1_2p81s")
@@ -15,6 +15,7 @@ scale = Vector2(6, 6)
 texture = ExtResource("2_6ihi1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1089315293]
+position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_rvx1i")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
