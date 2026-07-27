@@ -40,3 +40,5 @@ size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("1_arass")
 theme_override_font_sizes/font_size = 40
 text = "Restart"
+
+[connection signal="pressed" from="RestartButton" to="." method="_on_restart_button_pressed"]

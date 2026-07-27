@@ -5,8 +5,9 @@
 [node name="HUD" type="CanvasLayer" unique_id=211630167]
 
 [node name="ScoreLabel" type="Label" parent="." unique_id=1211964936]
-offset_right = 238.0
-offset_bottom = 100.0
+offset_right = 266.0
+offset_bottom = 109.0
+theme_override_colors/font_color = Color(0.28235295, 0.23529412, 0.27450982, 1)
 theme_override_fonts/font = ExtResource("1_e0onf")
 theme_override_font_sizes/font_size = 50
 text = "Score: "
@@ -25,6 +26,7 @@ offset_right = 78.0
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_color = Color(0.28235295, 0.23529412, 0.27450982, 1)
 theme_override_fonts/font = ExtResource("1_e0onf")
 theme_override_font_sizes/font_size = 50
 text = "Press SPACE to Play!"

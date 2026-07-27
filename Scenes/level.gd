@@ -17,6 +17,7 @@ const GROUND_Y = 515
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	screen_size = get_window().size
+	$GameOverMenu.get_node("RestartButton").pressed.connect(new_game)
 	new_game()
 
 func new_game():
@@ -24,8 +25,9 @@ func new_game():
 	show_score()
 	game_running = false
 	
+	#Show start message and hide game over screen
 	$HUD.get_node("StartLabel").show()
-
+	$GameOverMenu.hide()
 
 func _on_obstacle_spawn_timer_timeout() -> void:
 	spawn_obstacle()
@@ -72,3 +74,4 @@ func show_score():
 func game_over():
 	get_tree().paused = true
 	game_running = false
+	$GameOverMenu.show()
