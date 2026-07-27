@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://ckimhjuj0m1qs" path="res://Scenes/player.tscn" id="1_k5f4k"]
 [ext_resource type="Script" uid="uid://dehq7rcp5ohhi" path="res://Scenes/level.gd" id="1_wqkje"]
 [ext_resource type="PackedScene" uid="uid://cs0w6u25qp4r5" path="res://Scenes/hud.tscn" id="7_8c0lf"]
-[ext_resource type="AudioStream" uid="uid://doisqgrel8ert" path="res://Assets/Audio/Music/Tiny Pack/MP3/1_new_life_master.mp3" id="8_754fn"]
+[ext_resource type="AudioStream" uid="uid://doisqgrel8ert" path="res://Assets/Audio/BG Music/Tiny Pack/MP3/1_new_life_master.mp3" id="8_754fn"]
 
 [node name="Level" type="Node2D" unique_id=1404980598]
 script = ExtResource("1_wqkje")
@@ -28,8 +28,5 @@ autoplay = true
 
 [node name="ObstacleSpawnTimer" type="Timer" parent="." unique_id=1510335751]
 autostart = true
-
-[node name="Marker2D" type="Marker2D" parent="." unique_id=140090879]
-position = Vector2(1222, 530)
 
 [connection signal="timeout" from="ObstacleSpawnTimer" to="." method="_on_obstacle_spawn_timer_timeout"]

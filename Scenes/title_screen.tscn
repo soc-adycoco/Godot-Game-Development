@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dft0r748oxpc6"]
 
 [ext_resource type="Script" uid="uid://q5hamjakj8mf" path="res://Scenes/title_screen.gd" id="1_4gxqj"]
-[ext_resource type="Texture2D" uid="uid://43lfyw1042ru" path="res://Assets/Meadow 1.png" id="1_klylv"]
+[ext_resource type="Texture2D" uid="uid://43lfyw1042ru" path="res://Assets/Background/Meadow 1.png" id="1_klylv"]
 [ext_resource type="FontFile" uid="uid://cw0hfw4sjeamc" path="res://Assets/Fonts/VT323-Regular.ttf" id="2_p3fck"]
 
 [node name="TitleScreen" type="Control" unique_id=515661801]

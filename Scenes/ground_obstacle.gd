@@ -1,7 +1,6 @@
 extends Area2D
 class_name Obstacle
 
-#@export var spawnpoint = Vector2.ZERO
 var speed = 8
 
 # Called when the node enters the scene tree for the first time.
@@ -12,5 +11,6 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	position.x -= speed
 
-#func get_spawn_point():
-	#return spawnpoint
+
+func _on_body_entered(body: Node2D) -> void:
+	print(body)

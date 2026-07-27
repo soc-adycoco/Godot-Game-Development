@@ -18,7 +18,7 @@ const GROUND_Y = 515
 func _ready() -> void:
 	screen_size = get_window().size
 	new_game()
-	
+
 func new_game():
 	score = 0
 	show_score()
@@ -58,7 +58,16 @@ func spawn_obstacle():
 		obstacle_node.position = Vector2i(spawn_x, FLYING_Y)
 	else:
 		obstacle_node.position = Vector2i(spawn_x, GROUND_Y)
+	obstacle_node.body_entered.connect(hit_obstacle)
 	add_child(obstacle_node)
+
+func hit_obstacle(body):
+	if body.name == "Player":
+		game_over()
 
 func show_score():
 	$HUD.get_node("ScoreLabel").text = "Score: " + str(score)
+
+func game_over():
+	get_tree().paused = true
+	game_running = false

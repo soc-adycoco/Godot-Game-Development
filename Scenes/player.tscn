@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://ckimhjuj0m1qs"]
 
 [ext_resource type="Script" uid="uid://cypj0wr7ymawc" path="res://Scenes/player.gd" id="1_cvnsp"]
-[ext_resource type="Texture2D" uid="uid://m5e0glhaomhh" path="res://Assets/pigeon_eat-Sheet.png" id="2_vgqql"]
-[ext_resource type="Texture2D" uid="uid://cjplrhvlvhqfw" path="res://Assets/pigeon_fiy-Sheet.png" id="3_fkybt"]
-[ext_resource type="Texture2D" uid="uid://cjbhscmpy1uh" path="res://Assets/pigeon_walking-Sheet.png" id="4_x3wgy"]
+[ext_resource type="Texture2D" uid="uid://m5e0glhaomhh" path="res://Assets/Player spritesheets/pigeon_eat-Sheet.png" id="2_vgqql"]
+[ext_resource type="Texture2D" uid="uid://cjplrhvlvhqfw" path="res://Assets/Player spritesheets/pigeon_fiy-Sheet.png" id="3_fkybt"]
+[ext_resource type="Texture2D" uid="uid://cjbhscmpy1uh" path="res://Assets/Player spritesheets/pigeon_walking-Sheet.png" id="4_x3wgy"]
 [ext_resource type="AudioStream" uid="uid://dccoa4obqdwqa" path="res://Assets/Audio/SFX/404794__owlstorm__retro-video-game-sfx-hop.wav" id="5_fkybt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3smsa"]
