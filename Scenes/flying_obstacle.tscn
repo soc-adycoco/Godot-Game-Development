@@ -45,11 +45,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ntek2"]
-size = Vector2(119, 64)
+size = Vector2(104, 64)
 
 [node name="FlyingObstacle" type="Area2D" unique_id=278548053]
 script = SubResource("GDScript_4eb7l")
-spawnpoint = Vector2(1152, 300)
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=133422061]
 texture_filter = 1
@@ -57,9 +56,9 @@ scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_2vbwf")
 animation = &"enemy_fly"
 autoplay = "enemy_fly"
-frame = 3
-frame_progress = 0.07345179
+frame = 6
+frame_progress = 0.74301594
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1537684294]
-position = Vector2(-4.5, -16)
+position = Vector2(-8, -24)
 shape = SubResource("RectangleShape2D_ntek2")

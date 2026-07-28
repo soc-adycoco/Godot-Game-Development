@@ -10,7 +10,7 @@ func _physics_process(delta: float) -> void:
 
 	# Handle jump - holding down jump key makes player continuously jump
 	if is_on_floor():
-		#$RunCollision.disabled = false
+		$RunCollision.disabled = false
 		if Input.is_action_pressed("Jump"):
 			velocity.y = JUMP_VELOCITY
 			$JumpSFX.play()

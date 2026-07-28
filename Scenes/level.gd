@@ -6,7 +6,7 @@ var obstacles : Array = [ground_obstacle_scene, flying_obstacle_scene]
 
 #Variables and constants
 var speed = 0
-const START_SPEED = 8.0
+const START_SPEED = 8
 var screen_size
 var score
 var game_running : bool

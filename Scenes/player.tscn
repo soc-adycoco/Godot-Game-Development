@@ -145,3 +145,5 @@ stream = ExtResource("5_x3wgy")
 
 [node name="DuckSFX" type="AudioStreamPlayer2D" parent="." unique_id=729426002]
 stream = ExtResource("5_fkybt")
+
+[node name="HitSFX" type="AudioStreamPlayer2D" parent="." unique_id=1351046611]
