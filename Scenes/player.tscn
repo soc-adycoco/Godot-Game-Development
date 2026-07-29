@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cjplrhvlvhqfw" path="res://Assets/Player spritesheets/pigeon_fiy-Sheet.png" id="3_fkybt"]
 [ext_resource type="Texture2D" uid="uid://cjbhscmpy1uh" path="res://Assets/Player spritesheets/pigeon_walking-Sheet.png" id="4_x3wgy"]
 [ext_resource type="AudioStream" uid="uid://ixhe4duaxv7f" path="res://Assets/Audio/SFX/462958__bastianhallo__cartoon-jump.wav" id="5_x3wgy"]
-[ext_resource type="AudioStream" uid="uid://xqq73u4jya83" path="res://Assets/Audio/SFX/350906__cabled_mess__jump_c_04.wav" id="6_3smsa"]
+[ext_resource type="AudioStream" uid="uid://c8mdg8ybewm8k" path="res://Assets/Audio/SFX/404794__owlstorm__retro-video-game-sfx-hop.wav" id="6_3smsa"]
 [ext_resource type="AudioStream" uid="uid://dbmhhcexm72tx" path="res://Assets/Audio/SFX/400581__alanmcki__retro-arcade-video-game-descending-lose-life-tone.wav" id="7_8erm5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3smsa"]
@@ -148,4 +148,5 @@ stream = ExtResource("5_x3wgy")
 stream = ExtResource("6_3smsa")
 
 [node name="HitSFX" type="AudioStreamPlayer2D" parent="." unique_id=1351046611]
+process_mode = 3
 stream = ExtResource("7_8erm5")

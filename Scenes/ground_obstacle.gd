@@ -12,5 +12,5 @@ func _process(delta: float) -> void:
 	position.x -= speed
 
 
-func _on_body_entered(body: Node2D) -> void:
-	print(body)
+func _on_area_exited(area: Area2D) -> void:
+	queue_free()

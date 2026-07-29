@@ -17,7 +17,8 @@ func _physics_process(delta: float) -> void:
 		elif Input.is_action_pressed("Duck"):
 			$PlayerImage.play("duck")
 			$RunCollision.disabled = true
-			$DuckSFX.play()
+			if not $DuckSFX.is_playing():
+				$DuckSFX.play()
 		else:
 			$PlayerImage.play("run")
 	else:

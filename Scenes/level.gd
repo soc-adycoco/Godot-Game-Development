@@ -11,12 +11,20 @@ var screen_size
 var score
 var game_running : bool
 
+var player_original_pos
+var camera_original_pos
+var ground_original_pos
+
 const FLYING_Y = 355
 const GROUND_Y = 515
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	screen_size = get_window().size
+	player_original_pos = $Player.position
+	camera_original_pos = $Camera.position
+	ground_original_pos = $Ground.position
+	
 	$GameOverMenu.get_node("RestartButton").pressed.connect(new_game)
 	new_game()
 
@@ -24,6 +32,12 @@ func new_game():
 	score = 0
 	show_score()
 	game_running = false
+	get_tree().paused = false
+	get_tree().call_group("delete_obstacles", "queue_free")
+	
+	$Player.position = player_original_pos
+	$Camera.position = camera_original_pos
+	$Ground.position = ground_original_pos
 	
 	#Show start message and hide game over screen
 	$HUD.get_node("StartLabel").show()
@@ -62,6 +76,7 @@ func spawn_obstacle():
 		else:
 			obstacle_node.position = Vector2i(spawn_x, GROUND_Y)
 		obstacle_node.body_entered.connect(hit_obstacle)
+		obstacle_node.add_to_group("delete_obstacles")
 		add_child(obstacle_node)
 
 func hit_obstacle(body):
@@ -72,6 +87,7 @@ func show_score():
 	$HUD.get_node("ScoreLabel").text = "Score: " + str(score)
 
 func game_over():
+	$Player/HitSFX.play()
 	get_tree().paused = true
 	game_running = false
 	$GameOverMenu.show()
