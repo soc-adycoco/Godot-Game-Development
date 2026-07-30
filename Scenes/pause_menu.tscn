@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://bgl0didqyr2cw"]
+
+[ext_resource type="Script" uid="uid://dtugrsuhmilcv" path="res://Scenes/pause_menu.gd" id="1_k0w1u"]
+[ext_resource type="FontFile" uid="uid://cw0hfw4sjeamc" path="res://Assets/Fonts/VT323-Regular.ttf" id="2_1och7"]
+
+[node name="PauseMenu" type="CanvasLayer" unique_id=1478476724]
+process_mode = 3
+script = ExtResource("1_k0w1u")
+
+[node name="PausedLabel" type="Label" parent="." unique_id=2060985631]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -168.0
+offset_top = -253.0
+offset_right = 168.0
+offset_bottom = -163.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_1och7")
+theme_override_font_sizes/font_size = 90
+text = "Paused"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=635933028]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -166.0
+offset_top = -130.75
+offset_right = 166.0
+offset_bottom = 178.75
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 20
+
+[node name="Resume" type="Button" parent="VBoxContainer" unique_id=1916418705]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_1och7")
+theme_override_font_sizes/font_size = 50
+text = "Resume"
+
+[node name="Restart" type="Button" parent="VBoxContainer" unique_id=1053355406]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_1och7")
+theme_override_font_sizes/font_size = 50
+text = "Restart"
+
+[node name="Home" type="Button" parent="VBoxContainer" unique_id=1400297996]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_1och7")
+theme_override_font_sizes/font_size = 50
+text = "Home"
+
+[connection signal="pressed" from="VBoxContainer/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="VBoxContainer/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="VBoxContainer/Home" to="." method="_on_home_pressed"]

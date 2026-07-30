@@ -6,9 +6,9 @@ var obstacles = [ground_obstacle_scene, flying_obstacle_scene]
 
 #Variables and constants
 var speed = 0
-const START_SPEED = 8.0
+const START_SPEED = 8
 var screen_size
-var score
+var score = 0
 var game_running : bool
 
 var player_original_pos
@@ -26,7 +26,7 @@ func _ready() -> void:
 	ground_original_pos = $Ground.position
 	
 	$GameOverMenu.get_node("RestartButton").pressed.connect(new_game)
-	new_game()
+	#$PauseMenu.get_node("VBoxContainer/Restart").pressed.connect(new_game)
 
 func new_game():
 	score = 0
@@ -42,6 +42,7 @@ func new_game():
 	#Show start message and hide game over screen
 	$HUD.get_node("StartLabel").show()
 	$GameOverMenu.hide()
+	$PauseMenu.hide()
 
 func _on_obstacle_spawn_timer_timeout() -> void:
 	spawn_obstacle()

@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cs0w6u25qp4r5" path="res://Scenes/hud.tscn" id="7_8c0lf"]
 [ext_resource type="PackedScene" uid="uid://0ftow58ksly1" path="res://Scenes/game_over_menu.tscn" id="7_754fn"]
 [ext_resource type="AudioStream" uid="uid://doisqgrel8ert" path="res://Assets/Audio/BG Music/Tiny Pack/MP3/1_new_life_master.mp3" id="8_754fn"]
+[ext_resource type="PackedScene" uid="uid://bgl0didqyr2cw" path="res://Scenes/pause_menu.tscn" id="8_bvt00"]
 
 [node name="Level" type="Node2D" unique_id=1404980598]
 script = ExtResource("1_wqkje")
@@ -35,6 +36,9 @@ autostart = true
 
 [node name="GameOverMenu" parent="." unique_id=1156535089 instance=ExtResource("7_754fn")]
 process_mode = 2
+visible = false
+
+[node name="PauseMenu" parent="." unique_id=714947880 instance=ExtResource("8_bvt00")]
 visible = false
 
 [connection signal="timeout" from="ObstacleSpawnTimer" to="." method="_on_obstacle_spawn_timer_timeout"]
