@@ -11,8 +11,9 @@
 [sub_resource type="GDScript" id="GDScript_4eb7l"]
 script/source = "extends Obstacle
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	$Sprite2D.play(\"enemy_fly\")
+	position.x -= speed / 2
 "
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2vbwf"]
@@ -45,7 +46,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ntek2"]
-size = Vector2(104, 64)
+size = Vector2(100, 64)
 
 [node name="FlyingObstacle" type="Area2D" unique_id=278548053]
 script = SubResource("GDScript_4eb7l")
@@ -60,5 +61,9 @@ frame = 6
 frame_progress = 0.74301594
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1537684294]
-position = Vector2(-8, -24)
+position = Vector2(-10, -24)
 shape = SubResource("RectangleShape2D_ntek2")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=972127472]
+position = Vector2(-48, -40)
+rect = Rect2(-10, -10, 98, 58)

@@ -1,22 +1,84 @@
 [gd_scene format=3 uid="uid://cc4obk4y7fo5k"]
 
-[ext_resource type="Texture2D" uid="uid://43lfyw1042ru" path="res://Assets/Background/Meadow 1.png" id="1_sjcup"]
+[ext_resource type="Texture2D" uid="uid://dm2b5ssvxwv5j" path="res://Assets/Background/Meadow.png" id="1_sjcup"]
 
-[node name="BG" type="Parallax2D" unique_id=71575663]
-repeat_size = Vector2(2304, 0)
+[node name="BG" type="Node2D" unique_id=1052043576]
 
-[node name="Image" type="Sprite2D" parent="." unique_id=1992646609]
-scale = Vector2(0.75, 0.75)
+[node name="Sky" type="Parallax2D" parent="." unique_id=1397888224]
+repeat_size = Vector2(1150, 0)
+
+[node name="SkyImg" type="Sprite2D" parent="Sky" unique_id=1992646609]
+scale = Vector2(2.9999998, 2.5312498)
 texture = ExtResource("1_sjcup")
 centered = false
 region_enabled = true
-region_rect = Rect2(0, 184, 1536, 848)
+region_rect = Rect2(0, 0, 384, 256)
 
-[node name="ImageFlipped" type="Sprite2D" parent="." unique_id=1258961738]
-position = Vector2(1152, 0)
-scale = Vector2(0.75, 0.75)
+[node name="Clouds" type="Parallax2D" parent="." unique_id=1432360548]
+scroll_scale = Vector2(0.7, 1)
+repeat_size = Vector2(2300, 0)
+
+[node name="CloudsImg" type="Sprite2D" parent="Clouds" unique_id=137440616]
+texture_filter = 1
+position = Vector2(0, -24.000008)
+scale = Vector2(3, 2.625)
+texture = ExtResource("1_sjcup")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 256, 384, 256)
+
+[node name="CloudsImgFlipped" type="Sprite2D" parent="Clouds" unique_id=1132167970]
+texture_filter = 1
+position = Vector2(1152, -24.000008)
+scale = Vector2(3, 2.625)
 texture = ExtResource("1_sjcup")
 centered = false
 flip_h = true
 region_enabled = true
-region_rect = Rect2(0, 184, 1536, 848)
+region_rect = Rect2(0, 256, 384, 256)
+
+[node name="Hills" type="Parallax2D" parent="." unique_id=1618570287]
+scroll_scale = Vector2(0.8, 1)
+repeat_size = Vector2(2300, 0)
+
+[node name="HillsImg" type="Sprite2D" parent="Hills" unique_id=293423850]
+texture_filter = 1
+position = Vector2(0, -112)
+scale = Vector2(3, 2.794118)
+texture = ExtResource("1_sjcup")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 496, 384, 272)
+
+[node name="HillsImgFlipped" type="Sprite2D" parent="Hills" unique_id=1070171265]
+texture_filter = 1
+position = Vector2(1152, -112.00001)
+scale = Vector2(3, 2.794118)
+texture = ExtResource("1_sjcup")
+centered = false
+flip_h = true
+region_enabled = true
+region_rect = Rect2(0, 496, 384, 272)
+
+[node name="Grass" type="Parallax2D" parent="." unique_id=289106305]
+scroll_scale = Vector2(0.9, 1)
+repeat_size = Vector2(2300, 0)
+
+[node name="GrassImg" type="Sprite2D" parent="Grass" unique_id=752904]
+texture_filter = 1
+position = Vector2(0, -47.999996)
+scale = Vector2(2.9999998, 2.7187498)
+texture = ExtResource("1_sjcup")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 768, 384, 256)
+
+[node name="GrassImgFlipped" type="Sprite2D" parent="Grass" unique_id=1746199787]
+texture_filter = 1
+position = Vector2(1152, -47.999996)
+scale = Vector2(2.9999998, 2.7187498)
+texture = ExtResource("1_sjcup")
+centered = false
+flip_h = true
+region_enabled = true
+region_rect = Rect2(0, 768, 384, 256)

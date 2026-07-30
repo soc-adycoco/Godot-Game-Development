@@ -117,11 +117,12 @@ animations = [{
 "speed": 8.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wpjfl"]
-size = Vector2(27, 29)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3smsa"]
+radius = 6.5996633
+height = 28.284271
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_olqyp"]
-size = Vector2(27, 19)
+size = Vector2(12, 18.833336)
 
 [node name="Player" type="CharacterBody2D" unique_id=1758742537]
 scale = Vector2(6, 6)
@@ -130,15 +131,16 @@ script = ExtResource("1_cvnsp")
 [node name="PlayerImage" type="AnimatedSprite2D" parent="." unique_id=1918165130]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_l6n3p")
-animation = &"duck"
+animation = &"run"
 autoplay = "run"
 
 [node name="RunCollision" type="CollisionShape2D" parent="." unique_id=39531646]
-position = Vector2(-2.5, 1.5)
-shape = SubResource("RectangleShape2D_wpjfl")
+position = Vector2(2.666667, 0)
+rotation = 0.7853982
+shape = SubResource("CapsuleShape2D_3smsa")
 
 [node name="DuckCollision" type="CollisionShape2D" parent="." unique_id=84433812]
-position = Vector2(-2.5, 6.5)
+position = Vector2(-3.3333335, 6.583332)
 shape = SubResource("RectangleShape2D_olqyp")
 
 [node name="JumpSFX" type="AudioStreamPlayer2D" parent="." unique_id=1303781161]
@@ -146,6 +148,7 @@ stream = ExtResource("5_x3wgy")
 
 [node name="DuckSFX" type="AudioStreamPlayer2D" parent="." unique_id=729426002]
 stream = ExtResource("6_3smsa")
+volume_db = 3.0
 
 [node name="HitSFX" type="AudioStreamPlayer2D" parent="." unique_id=1351046611]
 process_mode = 3

@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const GRAVITY = 3000
+const GRAVITY = 3500
 const JUMP_VELOCITY = -1200.0
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

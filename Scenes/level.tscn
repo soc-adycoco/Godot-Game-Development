@@ -12,6 +12,7 @@
 script = ExtResource("1_wqkje")
 
 [node name="BG" parent="." unique_id=71575663 instance=ExtResource("1_81xng")]
+position = Vector2(0, -72)
 
 [node name="Ground" parent="." unique_id=803207055 instance=ExtResource("1_6phgx")]
 
@@ -27,6 +28,7 @@ position = Vector2(576, 324)
 stream = ExtResource("8_754fn")
 volume_db = -1.5
 autoplay = true
+parameters/looping = true
 
 [node name="ObstacleSpawnTimer" type="Timer" parent="." unique_id=1510335751]
 autostart = true
