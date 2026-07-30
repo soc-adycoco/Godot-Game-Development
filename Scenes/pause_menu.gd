@@ -5,6 +5,7 @@ func pause():
 
 func resume():
 	get_tree().paused = false
+	visible = false
 
 func Esc():
 	if Input.is_action_just_pressed("Exit") and get_tree().paused == false:

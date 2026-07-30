@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+# Constants
 const GRAVITY = 3500
 const JUMP_VELOCITY = -1200.0
 
@@ -8,7 +9,7 @@ func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	velocity.y += GRAVITY * delta
 
-	# Handle jump - holding down jump key makes player continuously jump
+	# Handle jump. Holding down jump key makes player continuously jump
 	if is_on_floor():
 		$RunCollision.disabled = false
 		if Input.is_action_pressed("Jump"):
@@ -17,6 +18,7 @@ func _physics_process(delta: float) -> void:
 		elif Input.is_action_pressed("Duck"):
 			$PlayerImage.play("duck")
 			$RunCollision.disabled = true
+			# Stops the duck sfx from looping
 			if not $DuckSFX.is_playing():
 				$DuckSFX.play()
 		else:

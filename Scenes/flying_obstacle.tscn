@@ -13,6 +13,7 @@ script/source = "extends Obstacle
 
 func _physics_process(_delta: float) -> void:
 	$Sprite2D.play(\"enemy_fly\")
+	# Flying obstacles move faster so not overlap with ground obstacles
 	position.x -= speed / 2
 "
 
