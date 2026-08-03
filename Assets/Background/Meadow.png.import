@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dm2b5ssvxwv5j"
-path="res://.godot/imported/Meadow.png-5014da6dd3bf0262c4b66a61b9743aa0.ctex"
+path="res://.godot/imported/Meadow.png-d46167cab83f637fccfc82de40ac7f91.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Background/Meadow.png"
-dest_files=["res://.godot/imported/Meadow.png-5014da6dd3bf0262c4b66a61b9743aa0.ctex"]
+source_file="res://assets/background/Meadow.png"
+dest_files=["res://.godot/imported/Meadow.png-d46167cab83f637fccfc82de40ac7f91.ctex"]
 
 [params]
 

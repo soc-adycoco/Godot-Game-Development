@@ -1,18 +1,18 @@
 [gd_scene format=3 uid="uid://cgwdg75nqeebd"]
 
-[ext_resource type="Script" uid="uid://byehlt6hccw3s" path="res://Scripts/Obstacles/ground_obstacle.gd" id="1_ldtni"]
-[ext_resource type="Texture2D" uid="uid://0pdx3ge3y0nh" path="res://Assets/Obstacles/Tiles/tile_0089.png" id="2_m4r80"]
+[ext_resource type="Script" uid="uid://byehlt6hccw3s" path="res://scripts/Obstacles/ground_obstacle.gd" id="1_pvqag"]
+[ext_resource type="Texture2D" uid="uid://0pdx3ge3y0nh" path="res://assets/obstacles/tile_0089.png" id="2_er53r"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6ihi1"]
 radius = 40.1995
 
 [node name="GroundObstacle" type="Area2D" unique_id=2062863384]
-script = ExtResource("1_ldtni")
+script = ExtResource("1_pvqag")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=492233088]
 texture_filter = 1
 scale = Vector2(6, 6)
-texture = ExtResource("2_m4r80")
+texture = ExtResource("2_er53r")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1089315293]
 position = Vector2(0, 4)

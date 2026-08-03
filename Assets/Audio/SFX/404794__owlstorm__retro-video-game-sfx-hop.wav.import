@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://c8mdg8ybewm8k"
-path="res://.godot/imported/404794__owlstorm__retro-video-game-sfx-hop.wav-ded5a685d1aa39f7ecb6f277899b6b7e.sample"
+path="res://.godot/imported/404794__owlstorm__retro-video-game-sfx-hop.wav-e7be68cc159ac711f18d554264309765.sample"
 
 [deps]
 
-source_file="res://Assets/Audio/SFX/404794__owlstorm__retro-video-game-sfx-hop.wav"
-dest_files=["res://.godot/imported/404794__owlstorm__retro-video-game-sfx-hop.wav-ded5a685d1aa39f7ecb6f277899b6b7e.sample"]
+source_file="res://assets/audio/sfx/404794__owlstorm__retro-video-game-sfx-hop.wav"
+dest_files=["res://.godot/imported/404794__owlstorm__retro-video-game-sfx-hop.wav-e7be68cc159ac711f18d554264309765.sample"]
 
 [params]
 

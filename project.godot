@@ -10,10 +10,18 @@ config_version=5
 
 [application]
 
-config/name="Kiwi 2D Runner"
+config/name="Bird 2D Runner"
 run/main_scene="uid://dft0r748oxpc6"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://Assets/icon.svg"
+config/icon="res://assets/icon.svg"
+
+[file_customization]
+
+folder_colors={
+"res://assets/": "green",
+"res://scenes/": "teal",
+"res://scripts/": "blue"
+}
 
 [input]
 

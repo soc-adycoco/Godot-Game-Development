@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cs0w6u25qp4r5"]
 
-[ext_resource type="FontFile" uid="uid://cw0hfw4sjeamc" path="res://Assets/Fonts/VT323-Regular.ttf" id="1_e0onf"]
-[ext_resource type="Texture2D" uid="uid://cule7phv45pcq" path="res://Assets/Icons/pause_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" id="2_fccik"]
+[ext_resource type="FontFile" uid="uid://cw0hfw4sjeamc" path="res://assets/fonts_icons/VT323-Regular.ttf" id="1_e0onf"]
+[ext_resource type="Texture2D" uid="uid://cule7phv45pcq" path="res://assets/fonts_icons/pause_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" id="2_fccik"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e0onf"]
 bg_color = Color(0.90359825, 0.90359825, 0.9035982, 1)

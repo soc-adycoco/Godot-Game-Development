@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://ixhe4duaxv7f"
-path="res://.godot/imported/462958__bastianhallo__cartoon-jump.wav-f5b41943a24ba69dbaaa5a0a545486a2.sample"
+path="res://.godot/imported/462958__bastianhallo__cartoon-jump.wav-6c539a4bd947af11cd4a1c91fe4b71dc.sample"
 
 [deps]
 
-source_file="res://Assets/Audio/SFX/462958__bastianhallo__cartoon-jump.wav"
-dest_files=["res://.godot/imported/462958__bastianhallo__cartoon-jump.wav-f5b41943a24ba69dbaaa5a0a545486a2.sample"]
+source_file="res://assets/audio/sfx/462958__bastianhallo__cartoon-jump.wav"
+dest_files=["res://.godot/imported/462958__bastianhallo__cartoon-jump.wav-6c539a4bd947af11cd4a1c91fe4b71dc.sample"]
 
 [params]
 

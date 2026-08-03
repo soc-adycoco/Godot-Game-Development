@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dbmhhcexm72tx"
-path="res://.godot/imported/400581__alanmcki__retro-arcade-video-game-descending-lose-life-tone.wav-1cbe8ec8e12dee73ba697b0f0ae5affd.sample"
+path="res://.godot/imported/400581__alanmcki__retro-arcade-video-game-descending-lose-life-tone.wav-53a504e5a1c663c2ff179b5ed203c28f.sample"
 
 [deps]
 
-source_file="res://Assets/Audio/SFX/400581__alanmcki__retro-arcade-video-game-descending-lose-life-tone.wav"
-dest_files=["res://.godot/imported/400581__alanmcki__retro-arcade-video-game-descending-lose-life-tone.wav-1cbe8ec8e12dee73ba697b0f0ae5affd.sample"]
+source_file="res://assets/audio/sfx/400581__alanmcki__retro-arcade-video-game-descending-lose-life-tone.wav"
+dest_files=["res://.godot/imported/400581__alanmcki__retro-arcade-video-game-descending-lose-life-tone.wav-53a504e5a1c663c2ff179b5ed203c28f.sample"]
 
 [params]
 

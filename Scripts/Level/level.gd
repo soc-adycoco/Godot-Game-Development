@@ -1,7 +1,7 @@
 extends Node2D
 
-var ground_obstacle_scene = preload("res://Scenes/Obstacles/ground_obstacle.tscn")
-var flying_obstacle_scene = preload("res://Scenes/Obstacles/flying_obstacle.tscn")
+var ground_obstacle_scene = preload("res://scenes/Obstacles/ground_obstacle.tscn")
+var flying_obstacle_scene = preload("res://scenes/Obstacles/flying_obstacle.tscn")
 var obstacles = [ground_obstacle_scene, flying_obstacle_scene]
 
 # Variables and constants
@@ -21,7 +21,7 @@ const GROUND_Y = 515
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	screen_size = get_window().size
-	# Set player, camera, and ground positions to current
+	# Set player, camera, and ground positions to current positions
 	player_original_pos = $Player.position
 	camera_original_pos = $Camera.position
 	ground_original_pos = $Ground.position
@@ -30,7 +30,7 @@ func _ready() -> void:
 	$GameOverMenu.get_node("RestartButton").pressed.connect(new_game)
 	$PauseMenu.get_node("VBoxContainer/Restart").pressed.connect(new_game)
 
-# Reset each new game
+# Reset/start fresh for each new game
 func new_game():
 	score = 0
 	show_score()
@@ -78,11 +78,13 @@ func _process(_delta: float) -> void:
 			get_tree().paused = false
 			$PauseMenu.hide()
 		
+		
 	else:
 		# Wait for the player to press a key before the run starts
 		if Input.is_action_pressed("ui_accept"):
 			game_running = true
 			$HUD.get_node("StartLabel").hide()
+
 
 func spawn_obstacle():
 	if game_running:

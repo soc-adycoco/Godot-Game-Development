@@ -1,15 +1,15 @@
 [gd_scene format=3 uid="uid://dft0r748oxpc6"]
 
-[ext_resource type="Script" uid="uid://q5hamjakj8mf" path="res://Scripts/Menus/title_screen.gd" id="1_4gxqj"]
-[ext_resource type="Texture2D" uid="uid://43lfyw1042ru" path="res://Assets/Background/Meadow 1.png" id="1_klylv"]
-[ext_resource type="FontFile" uid="uid://cw0hfw4sjeamc" path="res://Assets/Fonts/VT323-Regular.ttf" id="2_p3fck"]
+[ext_resource type="Script" uid="uid://q5hamjakj8mf" path="res://scripts/Menus/title_screen.gd" id="1_gwm0g"]
+[ext_resource type="Texture2D" uid="uid://43lfyw1042ru" path="res://assets/background/Meadow 1.png" id="2_cgdqb"]
+[ext_resource type="FontFile" uid="uid://cw0hfw4sjeamc" path="res://assets/fonts_icons/VT323-Regular.ttf" id="3_qwko7"]
 
 [node name="TitleScreen" type="Control" unique_id=515661801]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 1152.0
 offset_bottom = 648.0
-script = ExtResource("1_4gxqj")
+script = ExtResource("1_gwm0g")
 
 [node name="Background" type="TextureRect" parent="." unique_id=465799678]
 layout_mode = 1
@@ -17,7 +17,7 @@ offset_top = -88.0
 offset_right = 1536.0
 offset_bottom = 936.0
 scale = Vector2(0.75, 0.75)
-texture = ExtResource("1_klylv")
+texture = ExtResource("2_cgdqb")
 
 [node name="Title" type="Label" parent="." unique_id=446000266]
 layout_mode = 1
@@ -33,7 +33,7 @@ offset_bottom = -138.75
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.16206557, 0.1620656, 0.16206557, 1)
-theme_override_fonts/font = ExtResource("2_p3fck")
+theme_override_fonts/font = ExtResource("3_qwko7")
 theme_override_font_sizes/font_size = 90
 text = "Bird Runner"
 horizontal_alignment = 1
@@ -58,7 +58,7 @@ theme_override_constants/separation = 20
 layout_mode = 2
 size_flags_horizontal = 5
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("2_p3fck")
+theme_override_fonts/font = ExtResource("3_qwko7")
 theme_override_font_sizes/font_size = 40
 text = "Play"
 
@@ -66,7 +66,7 @@ text = "Play"
 layout_mode = 2
 size_flags_horizontal = 5
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("2_p3fck")
+theme_override_fonts/font = ExtResource("3_qwko7")
 theme_override_font_sizes/font_size = 40
 text = "Tutorial"
 

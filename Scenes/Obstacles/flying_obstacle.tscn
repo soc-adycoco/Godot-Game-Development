@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://bltp1xlwrhdll"]
 
-[ext_resource type="Texture2D" uid="uid://dsyuh45t3xcuc" path="res://Assets/Obstacles/EnemyBird/01.png" id="1_1mb8k"]
-[ext_resource type="Texture2D" uid="uid://bqnjwlhrmyig5" path="res://Assets/Obstacles/EnemyBird/02.png" id="2_t82s0"]
-[ext_resource type="Texture2D" uid="uid://bx7jiygg8cpb4" path="res://Assets/Obstacles/EnemyBird/03.png" id="3_necj0"]
-[ext_resource type="Texture2D" uid="uid://rhhac3fgr2l8" path="res://Assets/Obstacles/EnemyBird/04.png" id="4_a7235"]
-[ext_resource type="Texture2D" uid="uid://btsua5kmy432r" path="res://Assets/Obstacles/EnemyBird/05.png" id="5_0ik7f"]
-[ext_resource type="Texture2D" uid="uid://dkg71paweo4bu" path="res://Assets/Obstacles/EnemyBird/06.png" id="6_nxiaa"]
-[ext_resource type="Texture2D" uid="uid://bhxlyjbaq2s7m" path="res://Assets/Obstacles/EnemyBird/07.png" id="7_uh2da"]
+[ext_resource type="Texture2D" uid="uid://dsyuh45t3xcuc" path="res://assets/obstacles/enemy_bird/01.png" id="1_1mb8k"]
+[ext_resource type="Texture2D" uid="uid://bqnjwlhrmyig5" path="res://assets/obstacles/enemy_bird/02.png" id="2_t82s0"]
+[ext_resource type="Texture2D" uid="uid://bx7jiygg8cpb4" path="res://assets/obstacles/enemy_bird/03.png" id="3_necj0"]
+[ext_resource type="Texture2D" uid="uid://rhhac3fgr2l8" path="res://assets/obstacles/enemy_bird/04.png" id="4_a7235"]
+[ext_resource type="Texture2D" uid="uid://btsua5kmy432r" path="res://assets/obstacles/enemy_bird/05.png" id="5_0ik7f"]
+[ext_resource type="Texture2D" uid="uid://dkg71paweo4bu" path="res://assets/obstacles/enemy_bird/06.png" id="6_nxiaa"]
+[ext_resource type="Texture2D" uid="uid://bhxlyjbaq2s7m" path="res://assets/obstacles/enemy_bird/07.png" id="7_uh2da"]
 
 [sub_resource type="GDScript" id="GDScript_4eb7l"]
 script/source = "# Inherits the ground obstacle's script

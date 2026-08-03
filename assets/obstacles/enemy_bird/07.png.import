@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xehqldkh1kgb"
-path="res://.godot/imported/backgroundColorDesert.png-8867698be5f7a438e9e3ae30b4c5913e.ctex"
+uid="uid://bhxlyjbaq2s7m"
+path="res://.godot/imported/07.png-9a7d10fa5ebc81e40f2e9e94f8c32f02.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/background/backgroundColorDesert.png"
-dest_files=["res://.godot/imported/backgroundColorDesert.png-8867698be5f7a438e9e3ae30b4c5913e.ctex"]
+source_file="res://assets/obstacles/enemy_bird/07.png"
+dest_files=["res://.godot/imported/07.png-9a7d10fa5ebc81e40f2e9e94f8c32f02.ctex"]
 
 [params]
 
