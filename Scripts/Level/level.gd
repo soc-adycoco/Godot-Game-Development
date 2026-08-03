@@ -1,7 +1,7 @@
 extends Node2D
 
-var ground_obstacle_scene = preload("res://Scenes/ground_obstacle.tscn")
-var flying_obstacle_scene = preload("res://Scenes/flying_obstacle.tscn")
+var ground_obstacle_scene = preload("res://Scenes/Obstacles/ground_obstacle.tscn")
+var flying_obstacle_scene = preload("res://Scenes/Obstacles/flying_obstacle.tscn")
 var obstacles = [ground_obstacle_scene, flying_obstacle_scene]
 
 # Variables and constants

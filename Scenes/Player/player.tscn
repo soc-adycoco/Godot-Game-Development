@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ckimhjuj0m1qs"]
 
-[ext_resource type="Script" uid="uid://cypj0wr7ymawc" path="res://Scenes/player.gd" id="1_cvnsp"]
+[ext_resource type="Script" uid="uid://cypj0wr7ymawc" path="res://Scripts/Player/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://m5e0glhaomhh" path="res://Assets/Player spritesheets/pigeon_eat-Sheet.png" id="2_vgqql"]
 [ext_resource type="Texture2D" uid="uid://cjplrhvlvhqfw" path="res://Assets/Player spritesheets/pigeon_fiy-Sheet.png" id="3_fkybt"]
 [ext_resource type="Texture2D" uid="uid://cjbhscmpy1uh" path="res://Assets/Player spritesheets/pigeon_walking-Sheet.png" id="4_x3wgy"]
