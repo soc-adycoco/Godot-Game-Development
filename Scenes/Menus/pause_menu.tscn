@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bgl0didqyr2cw"]
 
-[ext_resource type="Script" uid="uid://dtugrsuhmilcv" path="res://scripts/Menus/pause_menu.gd" id="1_k0w1u"]
+[ext_resource type="Script" uid="uid://dtugrsuhmilcv" path="res://scripts/menus/pause_menu.gd" id="1_k0w1u"]
 [ext_resource type="FontFile" uid="uid://cw0hfw4sjeamc" path="res://assets/fonts_icons/VT323-Regular.ttf" id="2_1och7"]
 
 [node name="PauseMenu" type="CanvasLayer" unique_id=1478476724]

@@ -69,7 +69,7 @@ func _process(_delta: float) -> void:
 		if $Camera.position.x - $Ground.position.x > screen_size.x * 1.5:
 			$Ground.position.x += screen_size.x
 		
-		# Pauses the game by making the pause menu visible
+		# Pauses the game and makes the pause menu visible
 		if Input.is_action_just_pressed("Exit") and get_tree().paused == false:
 			get_tree().paused = true
 			$PauseMenu.show()
@@ -120,9 +120,10 @@ func hit_obstacle(body):
 
 # Display the modified score (not increasing as rapidly) on the game's HUD
 func show_score():
+	@warning_ignore("integer_division")
 	$HUD.get_node("ScoreLabel").text = "Score: " + str(score / 10)
 
-# Player uses after they hit an obstacle
+# Player loses after they hit an obstacle
 func game_over():
 	$Player/HitSFX.play()
 	get_tree().paused = true
