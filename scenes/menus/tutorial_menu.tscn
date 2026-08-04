@@ -1,0 +1,154 @@
+[gd_scene format=3 uid="uid://dw6fwq4t0yh00"]
+
+[ext_resource type="Script" uid="uid://cw4nbg6ir3lmi" path="res://scripts/menus/tutorial_menu.gd" id="1_1uhyp"]
+[ext_resource type="FontFile" uid="uid://cw0hfw4sjeamc" path="res://assets/fonts_icons/VT323-Regular.ttf" id="1_eosj5"]
+[ext_resource type="Texture2D" uid="uid://bdwx5aqycp13m" path="res://assets/fonts_icons/emoji_objects_200dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.svg" id="2_40fd7"]
+[ext_resource type="Texture2D" uid="uid://43lfyw1042ru" path="res://assets/background/Meadow 1.png" id="3_1uhyp"]
+[ext_resource type="Texture2D" uid="uid://0pdx3ge3y0nh" path="res://assets/obstacles/tile_0089.png" id="4_37wlr"]
+[ext_resource type="Texture2D" uid="uid://bqnjwlhrmyig5" path="res://assets/obstacles/enemy_bird/02.png" id="5_xkjag"]
+[ext_resource type="Texture2D" uid="uid://cjbhscmpy1uh" path="res://assets/player_spritesheets/pigeon_walking-Sheet.png" id="6_hjm7i"]
+[ext_resource type="Texture2D" uid="uid://ddlel4ud1fcqk" path="res://assets/fonts_icons/close_200dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.svg" id="7_bjse0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mwl7n"]
+bg_color = Color(0.76862746, 0.61960787, 0.5137255, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jh4fd"]
+atlas = ExtResource("5_xkjag")
+region = Rect2(8, 16, 48, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iqtif"]
+atlas = ExtResource("6_hjm7i")
+region = Rect2(0, 0, 32, 32)
+
+[node name="Tutorial" type="Control" unique_id=1734833353]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1uhyp")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1201118077]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -385.0
+offset_top = -231.75
+offset_right = 385.0
+offset_bottom = 231.75
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0.8392157, 0.6862745, 1)
+
+[node name="TutorialHeader" type="Label" parent="ColorRect" unique_id=1700735885]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -190.5
+offset_top = 27.0
+offset_right = 190.5
+offset_bottom = 100.75
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.16206557, 0.1620656, 0.16206557, 1)
+theme_override_fonts/font = ExtResource("1_eosj5")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_mwl7n")
+text = "  How to Play "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LightbulbIcon" type="TextureRect" parent="ColorRect" unique_id=1526128101]
+texture_filter = 1
+layout_mode = 0
+offset_left = 189.0
+offset_top = 37.75
+offset_right = 241.0
+offset_bottom = 92.75
+texture = ExtResource("2_40fd7")
+stretch_mode = 4
+
+[node name="MiniBG" type="TextureRect" parent="ColorRect" unique_id=568478860]
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -199.375
+offset_top = -107.9375
+offset_right = 199.375
+offset_bottom = 91.9375
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_1uhyp")
+expand_mode = 1
+
+[node name="MiniGroundObs" type="TextureRect" parent="ColorRect" unique_id=1371004239]
+texture_filter = 1
+layout_mode = 0
+offset_left = 395.0
+offset_top = 262.75
+offset_right = 446.0
+offset_bottom = 317.75
+texture = ExtResource("4_37wlr")
+stretch_mode = 4
+
+[node name="MiniFlyingObs" type="TextureRect" parent="ColorRect" unique_id=945743056]
+texture_filter = 1
+layout_mode = 0
+offset_left = 454.0
+offset_top = 179.75
+offset_right = 556.0
+offset_bottom = 254.75
+texture = SubResource("AtlasTexture_jh4fd")
+stretch_mode = 4
+
+[node name="MiniPlayer" type="TextureRect" parent="ColorRect" unique_id=875708865]
+texture_filter = 1
+layout_mode = 0
+offset_left = 220.0
+offset_top = 207.75
+offset_right = 320.0
+offset_bottom = 304.75
+texture = SubResource("AtlasTexture_iqtif")
+stretch_mode = 4
+
+[node name="Description" type="Label" parent="ColorRect" unique_id=752483643]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -333.25
+offset_top = -132.25
+offset_right = 333.25
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.16078432, 0.16078432, 0.16078432, 1)
+theme_override_fonts/font = ExtResource("1_eosj5")
+theme_override_font_sizes/font_size = 35
+text = "Jump (W, up arrow key, or spacebar) and duck (S or down arrow key) to avoid obstacles.
+Survive for as long as you can!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="TutorialExitButton" type="TextureButton" parent="." unique_id=1322077116]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 322.0
+offset_top = 107.0
+offset_right = 370.0
+offset_bottom = 155.0
+grow_horizontal = 2
+texture_normal = ExtResource("7_bjse0")
+
+[connection signal="pressed" from="TutorialExitButton" to="." method="_on_exit_button_pressed"]

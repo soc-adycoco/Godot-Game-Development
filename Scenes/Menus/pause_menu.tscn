@@ -4,7 +4,6 @@
 [ext_resource type="FontFile" uid="uid://cw0hfw4sjeamc" path="res://assets/fonts_icons/VT323-Regular.ttf" id="2_1och7"]
 
 [node name="PauseMenu" type="CanvasLayer" unique_id=1478476724]
-process_mode = 3
 script = ExtResource("1_k0w1u")
 
 [node name="PausedLabel" type="Label" parent="." unique_id=2060985631]

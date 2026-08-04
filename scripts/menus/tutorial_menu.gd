@@ -7,13 +7,9 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta: float) -> void:
+func _process(delta: float) -> void:
 	pass
 
 
-func _on_start_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/level/level.tscn")
-
-
-func _on_tutorial_button_pressed() -> void:
-	$Tutorial.show()
+func _on_tutorial_exit_button_pressed() -> void:
+	visible = false

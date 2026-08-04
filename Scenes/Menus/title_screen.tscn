@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://q5hamjakj8mf" path="res://scripts/menus/title_screen.gd" id="1_yx444"]
 [ext_resource type="Texture2D" uid="uid://43lfyw1042ru" path="res://assets/background/Meadow 1.png" id="2_qc2aw"]
 [ext_resource type="FontFile" uid="uid://cw0hfw4sjeamc" path="res://assets/fonts_icons/VT323-Regular.ttf" id="3_vudbd"]
+[ext_resource type="PackedScene" uid="uid://dw6fwq4t0yh00" path="res://scenes/menus/tutorial_menu.tscn" id="4_qc2aw"]
 
 [node name="TitleScreen" type="Control" unique_id=515661801]
 layout_mode = 3
@@ -47,12 +48,12 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -142.0
-offset_top = -99.0
+offset_top = -114.0
 offset_right = 142.0
-offset_bottom = 99.0
+offset_bottom = 114.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 20
+theme_override_constants/separation = 15
 
 [node name="StartButton" type="Button" parent="VBoxContainer" unique_id=1825051415]
 layout_mode = 2
@@ -70,4 +71,17 @@ theme_override_fonts/font = ExtResource("3_vudbd")
 theme_override_font_sizes/font_size = 40
 text = "Tutorial"
 
+[node name="CreditsButton" type="Button" parent="VBoxContainer" unique_id=180091927]
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("3_vudbd")
+theme_override_font_sizes/font_size = 40
+text = "Credits"
+
+[node name="Tutorial" parent="." unique_id=1734833353 instance=ExtResource("4_qc2aw")]
+visible = false
+layout_mode = 1
+
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/TutorialButton" to="." method="_on_tutorial_button_pressed"]

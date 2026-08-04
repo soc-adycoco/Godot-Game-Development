@@ -1,14 +1,14 @@
-[gd_scene format=3 uid="uid://cs0w6u25qp4r5"]
+[gd_scene format=3 uid="uid://cmbnlekfv4ckv"]
 
 [ext_resource type="FontFile" uid="uid://cw0hfw4sjeamc" path="res://assets/fonts_icons/VT323-Regular.ttf" id="1_e0onf"]
 [ext_resource type="Texture2D" uid="uid://cule7phv45pcq" path="res://assets/fonts_icons/pause_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" id="2_fccik"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e0onf"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tfgnj"]
 bg_color = Color(0.90359825, 0.90359825, 0.9035982, 1)
 
-[node name="HUD" type="CanvasLayer" unique_id=211630167]
+[node name="HUD" type="CanvasLayer" unique_id=1972929521]
 
-[node name="ScoreLabel" type="Label" parent="." unique_id=1211964936]
+[node name="ScoreLabel" type="Label" parent="." unique_id=455305018]
 offset_right = 266.0
 offset_bottom = 109.0
 theme_override_colors/font_color = Color(0.28235295, 0.23529412, 0.27450982, 1)
@@ -17,9 +17,8 @@ theme_override_font_sizes/font_size = 50
 text = "Score: "
 horizontal_alignment = 1
 vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
 
-[node name="StartLabel" type="Label" parent="." unique_id=680024230]
+[node name="StartLabel" type="Label" parent="." unique_id=1268472449]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -34,12 +33,12 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(0.28235295, 0.23529412, 0.27450982, 1)
 theme_override_fonts/font = ExtResource("1_e0onf")
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_e0onf")
+theme_override_styles/normal = SubResource("StyleBoxFlat_tfgnj")
 text = "Press SPACE to Play!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="PauseButton" type="TextureButton" parent="." unique_id=533428116]
+[node name="PauseButton" type="TextureButton" parent="." unique_id=579221801]
 texture_filter = 1
 anchors_preset = 1
 anchor_left = 1.0

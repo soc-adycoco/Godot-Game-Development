@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cc4obk4y7fo5k" path="res://scenes/level/bg.tscn" id="1_81xng"]
 [ext_resource type="PackedScene" uid="uid://ckimhjuj0m1qs" path="res://scenes/player/player.tscn" id="1_k5f4k"]
 [ext_resource type="Script" uid="uid://dehq7rcp5ohhi" path="res://scripts/level/level.gd" id="1_wqkje"]
-[ext_resource type="PackedScene" uid="uid://cs0w6u25qp4r5" path="res://scenes/menus/hud.tscn" id="7_8c0lf"]
+[ext_resource type="PackedScene" uid="uid://cmbnlekfv4ckv" path="res://scenes/menus/hud.tscn" id="6_xv074"]
 [ext_resource type="PackedScene" uid="uid://0ftow58ksly1" path="res://scenes/menus/game_over_menu.tscn" id="7_754fn"]
 [ext_resource type="AudioStream" uid="uid://doisqgrel8ert" path="res://assets/audio/music/Tiny Pack/MP3/1_new_life_master.mp3" id="8_754fn"]
 [ext_resource type="PackedScene" uid="uid://bgl0didqyr2cw" path="res://scenes/menus/pause_menu.tscn" id="8_bvt00"]
@@ -23,8 +23,6 @@ position = Vector2(218, 455)
 [node name="Camera" type="Camera2D" parent="." unique_id=1602047086]
 position = Vector2(576, 324)
 
-[node name="HUD" parent="." unique_id=678169666 instance=ExtResource("7_8c0lf")]
-
 [node name="BGMusic" type="AudioStreamPlayer" parent="." unique_id=573283985]
 stream = ExtResource("8_754fn")
 volume_db = -1.5
@@ -33,6 +31,8 @@ parameters/looping = true
 
 [node name="ObstacleSpawnTimer" type="Timer" parent="." unique_id=1510335751]
 autostart = true
+
+[node name="HUD" parent="." unique_id=1972929521 instance=ExtResource("6_xv074")]
 
 [node name="GameOverMenu" parent="." unique_id=1156535089 instance=ExtResource("7_754fn")]
 process_mode = 2
