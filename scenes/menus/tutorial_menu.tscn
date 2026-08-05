@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://bqnjwlhrmyig5" path="res://assets/obstacles/enemy_bird/02.png" id="5_xkjag"]
 [ext_resource type="Texture2D" uid="uid://cjbhscmpy1uh" path="res://assets/player_spritesheets/pigeon_walking-Sheet.png" id="6_hjm7i"]
 [ext_resource type="Texture2D" uid="uid://ddlel4ud1fcqk" path="res://assets/fonts_icons/close_200dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.svg" id="7_bjse0"]
+[ext_resource type="Texture2D" uid="uid://bx6ipascgv4q1" path="res://assets/fonts_icons/cancel_200dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.svg" id="9_gkimw"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mwl7n"]
 bg_color = Color(0.76862746, 0.61960787, 0.5137255, 1)
@@ -150,5 +151,6 @@ offset_right = 370.0
 offset_bottom = 155.0
 grow_horizontal = 2
 texture_normal = ExtResource("7_bjse0")
+texture_hover = ExtResource("9_gkimw")
 
-[connection signal="pressed" from="TutorialExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="TutorialExitButton" to="." method="_on_tutorial_exit_button_pressed"]

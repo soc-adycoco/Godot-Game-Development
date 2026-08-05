@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://43lfyw1042ru" path="res://assets/background/Meadow 1.png" id="2_qc2aw"]
 [ext_resource type="FontFile" uid="uid://cw0hfw4sjeamc" path="res://assets/fonts_icons/VT323-Regular.ttf" id="3_vudbd"]
 [ext_resource type="PackedScene" uid="uid://dw6fwq4t0yh00" path="res://scenes/menus/tutorial_menu.tscn" id="4_qc2aw"]
+[ext_resource type="PackedScene" uid="uid://vei5wnit3gji" path="res://scenes/menus/credits_menu.tscn" id="5_vudbd"]
 
 [node name="TitleScreen" type="Control" unique_id=515661801]
 layout_mode = 3
@@ -50,7 +51,7 @@ anchor_bottom = 0.5
 offset_left = -142.0
 offset_top = -114.0
 offset_right = 142.0
-offset_bottom = 114.0
+offset_bottom = 146.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 15
@@ -83,5 +84,10 @@ text = "Credits"
 visible = false
 layout_mode = 1
 
+[node name="Credits" parent="." unique_id=1985810252 instance=ExtResource("5_vudbd")]
+visible = false
+layout_mode = 1
+
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/TutorialButton" to="." method="_on_tutorial_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]

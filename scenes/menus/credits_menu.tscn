@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://c20ddirnyh140" path="res://scripts/menus/credits_menu.gd" id="1_xtkoc"]
 [ext_resource type="FontFile" uid="uid://cw0hfw4sjeamc" path="res://assets/fonts_icons/VT323-Regular.ttf" id="2_d74go"]
 [ext_resource type="Texture2D" uid="uid://ddlel4ud1fcqk" path="res://assets/fonts_icons/close_200dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.svg" id="3_325oc"]
+[ext_resource type="Texture2D" uid="uid://bx6ipascgv4q1" path="res://assets/fonts_icons/cancel_200dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.svg" id="4_d74go"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wywfy"]
 bg_color = Color(0.76862746, 0.61960787, 0.5137255, 1)
@@ -55,7 +56,7 @@ text = "Credits"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Description" type="Label" parent="ColorRect" unique_id=1310099233]
+[node name="List" type="Label" parent="ColorRect" unique_id=1310099233]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -63,16 +64,22 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -333.25
-offset_top = -66.125
+offset_top = -126.5
 offset_right = 333.25
-offset_bottom = 66.125
+offset_bottom = 174.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.16078432, 0.16078432, 0.16078432, 1)
 theme_override_fonts/font = ExtResource("2_d74go")
-theme_override_font_sizes/font_size = 35
+theme_override_font_sizes/font_size = 30
 text = "Assets used:
-"
+BG - 
+Player animations -
+Obstacles -
+
+Jump SFX -
+Duck SFX -
+BG Music - "
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
@@ -88,5 +95,6 @@ offset_right = 370.0
 offset_bottom = -149.0
 grow_horizontal = 2
 texture_normal = ExtResource("3_325oc")
+texture_hover = ExtResource("4_d74go")
 
 [connection signal="pressed" from="CreditsExitButton" to="." method="_on_credits_exit_button_pressed"]
