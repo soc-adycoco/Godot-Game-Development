@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cyfoeijr3pnpq"]
+
+[ext_resource type="Texture2D" uid="uid://cule7phv45pcq" path="res://assets/fonts_icons/pause_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" id="1_mjrqt"]
+[ext_resource type="Texture2D" uid="uid://b7063cdmdq1p1" path="res://assets/tile_0070.png" id="2_erc8l"]
+[ext_resource type="Texture2D" uid="uid://dobnnxp7nos3u" path="res://assets/tile_0071.png" id="3_jkv4c"]
+
+[node name="MobileControls" type="CanvasLayer" unique_id=2097484926]
+
+[node name="PauseButton" type="TouchScreenButton" parent="." unique_id=1754582775]
+process_mode = 3
+texture_filter = 1
+position = Vector2(1023.99994, 16.000002)
+scale = Vector2(4.625002, 4.6666665)
+texture_normal = ExtResource("1_mjrqt")
+action = "Pause"
+
+[node name="JumpButton" type="TouchScreenButton" parent="." unique_id=134312866]
+texture_filter = 1
+position = Vector2(40, 368)
+scale = Vector2(5.9999995, 6.0000014)
+texture_normal = ExtResource("2_erc8l")
+action = "Jump"
+
+[node name="DuckButton" type="TouchScreenButton" parent="." unique_id=602475221]
+texture_filter = 1
+position = Vector2(40.000004, 504)
+scale = Vector2(5.9999995, 5.9999967)
+texture_normal = ExtResource("3_jkv4c")
+action = "Duck"

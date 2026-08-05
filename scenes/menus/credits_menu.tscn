@@ -56,7 +56,22 @@ text = "Credits"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="List" type="Label" parent="ColorRect" unique_id=1310099233]
+[node name="Subheader" type="Label" parent="ColorRect" unique_id=1267758859]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -96.0
+offset_top = 104.0
+offset_right = 96.0
+offset_bottom = 144.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.16078432, 0.16078432, 0.16078432, 1)
+theme_override_fonts/font = ExtResource("2_d74go")
+theme_override_font_sizes/font_size = 40
+text = "Assets used!"
+
+[node name="List" type="RichTextLabel" parent="ColorRect" unique_id=237646734]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -69,20 +84,21 @@ offset_right = 333.25
 offset_bottom = 174.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(0.16078432, 0.16078432, 0.16078432, 1)
-theme_override_fonts/font = ExtResource("2_d74go")
-theme_override_font_sizes/font_size = 30
-text = "Assets used:
-BG - 
-Player animations -
-Obstacles -
-
-Jump SFX -
+theme_override_colors/default_color = Color(0.16078432, 0.16078432, 0.16078432, 1)
+theme_override_fonts/normal_font = ExtResource("2_d74go")
+theme_override_font_sizes/normal_font_size = 25
+text = "BG: \"Green Meadow pixel Background in 4 layers\" by Clow
+Player animations: \"Pigeon Pixel\" by kangjung
+Obstacles:
+Font:
+Icons:
+Jump SFX
 Duck SFX -
+Lose SFX
 BG Music - "
+autowrap_mode = 2
 horizontal_alignment = 1
 vertical_alignment = 1
-autowrap_mode = 2
 
 [node name="CreditsExitButton" type="TextureButton" parent="." unique_id=2058229823]
 layout_mode = 1

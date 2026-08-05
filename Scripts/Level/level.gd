@@ -69,15 +69,6 @@ func _process(_delta: float) -> void:
 		if $Camera.position.x - $Ground.position.x > screen_size.x * 1.5:
 			$Ground.position.x += screen_size.x
 		
-		# Pauses the game and makes the pause menu visible
-		if Input.is_action_just_pressed("Exit") and get_tree().paused == false:
-			get_tree().paused = true
-			$PauseMenu.show()
-		# Close the pause menu and resume the current run
-		elif Input.is_action_just_pressed("Exit") and get_tree().paused == true:
-			get_tree().paused = false
-			$PauseMenu.hide()
-		
 		
 	else:
 		# Wait for the player to press a key before the run starts

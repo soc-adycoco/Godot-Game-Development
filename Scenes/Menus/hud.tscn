@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cmbnlekfv4ckv"]
 
 [ext_resource type="FontFile" uid="uid://cw0hfw4sjeamc" path="res://assets/fonts_icons/VT323-Regular.ttf" id="1_e0onf"]
-[ext_resource type="Texture2D" uid="uid://cule7phv45pcq" path="res://assets/fonts_icons/pause_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" id="2_fccik"]
+[ext_resource type="PackedScene" uid="uid://cyfoeijr3pnpq" path="res://scenes/menus/mobile_controls.tscn" id="3_lf75b"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tfgnj"]
 bg_color = Color(0.90359825, 0.90359825, 0.9035982, 1)
@@ -38,15 +38,4 @@ text = "Press SPACE to Play!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="PauseButton" type="TextureButton" parent="." unique_id=579221801]
-texture_filter = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -136.0
-offset_top = 16.0
-offset_right = -16.0
-offset_bottom = 104.0
-grow_horizontal = 0
-texture_normal = ExtResource("2_fccik")
-stretch_mode = 5
+[node name="MobileControls" parent="." unique_id=2097484926 instance=ExtResource("3_lf75b")]
