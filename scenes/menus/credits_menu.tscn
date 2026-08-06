@@ -44,9 +44,9 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -163.25
-offset_top = 32.0
+offset_top = 24.0
 offset_right = 163.25
-offset_bottom = 105.75
+offset_bottom = 97.75
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.16206557, 0.1620656, 0.16206557, 1)
 theme_override_fonts/font = ExtResource("2_d74go")
@@ -62,40 +62,50 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -96.0
-offset_top = 104.0
+offset_top = 96.0
 offset_right = 96.0
-offset_bottom = 144.0
+offset_bottom = 136.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.16078432, 0.16078432, 0.16078432, 1)
 theme_override_fonts/font = ExtResource("2_d74go")
 theme_override_font_sizes/font_size = 40
-text = "Assets used!"
+text = "Assets used:"
 
 [node name="List" type="RichTextLabel" parent="ColorRect" unique_id=237646734]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = 7
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -333.25
-offset_top = -126.5
-offset_right = 333.25
-offset_bottom = 174.5
+anchor_bottom = 1.0
+offset_left = -356.125
+offset_top = -317.0
+offset_right = 356.125
+offset_bottom = -16.0
 grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
 theme_override_colors/default_color = Color(0.16078432, 0.16078432, 0.16078432, 1)
 theme_override_fonts/normal_font = ExtResource("2_d74go")
 theme_override_font_sizes/normal_font_size = 25
 text = "BG: \"Green Meadow pixel Background in 4 layers\" by Clow
+
 Player animations: \"Pigeon Pixel\" by kangjung
-Obstacles:
-Font:
-Icons:
-Jump SFX
-Duck SFX -
-Lose SFX
-BG Music - "
+
+Rock/ground obstacle: from \"Tiny Farm\" by Kenney.nl
+
+Bird/flying obstacle: \"FREE Bird flying pixel art animation\" by ankousse26
+
+Font: \"VT323\" from Google Fonts designed by Peter Hull
+
+Icons: \"Close\" icon, \"Pause\" icon, and \"Emoji Objects\" Tutorial icon from Google Fonts
+
+BG Music: \"New Life\" from \"Cozy Sim Music Pack [Town Life] - Tiny Pack\" by Rest!
+
+Jump SFX: \"Cartoon.wav\" by Bastianhallo
+
+Duck SFX: \"Retro video game sfx - Hop\" by OwlStorm
+
+Lose SFX: \"Retro arcade video game descending, lose life tone\" by alanmcki"
 autowrap_mode = 2
 horizontal_alignment = 1
 vertical_alignment = 1

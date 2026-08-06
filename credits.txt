@@ -1,0 +1,16 @@
+Assets used:
+
+Background - "Green Meadow pixel Background in 4 layers" by Clow -- https://clow13.itch.io/green-meadow-pixel-background-in-4-layers -- License:
+Player animations - "Pigeon Pixel" by kangjung -- https://kangjung.itch.io/pigeon-pixel -- License:
+Rock/ground obstacle - "Tiny Farm" by Kenny.nl -- https://kenney.nl/assets/tiny-farm -- License:
+Bird/flying obstacle - "FREE Bird flying pixel art animation" by ankousse26 -- https://ankousse26.itch.io/bird-flying-pixel-art-animation-free -- License:
+Font - VT323 from Google Fonts designed by Peter Hull -- https://fonts.google.com/specimen/VT323?preview.script=Latn -- License: SIL Open Font License, Version 1.1
+Icons - "Close", "Cancel", and "Emoji Objects" by Google Fonts -- https://fonts.google.com/icons -- License: 
+
+
+Music/sound effects:
+
+Background music - "New Life" from "Cozy Sim Music Pack [Town Life] - Tiny Pack" by Rest! -- https://richarrest.itch.io/cozy-sim-music-pack-town-life -- License: Attribution-ShareAlike 4.0
+Jump sound effect - "Cartoon jump.wav" by Bastianhallo -- https://freesound.org/people/Bastianhallo/sounds/462958/ -- License: Creative Commons 0
+Duck sound effect - "Retro video game sfx - Hop" by OwlStorm -- https://freesound.org/people/OwlStorm/sounds/404794/ -- License: Creative Commons 0
+Lose sound effect - "Retro arcade video game descending, lose life tone" by alanmcki -- https://freesound.org/s/400581/ -- License: Attribution 4.0
