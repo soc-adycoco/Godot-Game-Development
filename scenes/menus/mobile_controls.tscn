@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://cyfoeijr3pnpq"]
 
-[ext_resource type="Texture2D" uid="uid://cule7phv45pcq" path="res://assets/fonts_icons/pause_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" id="1_mjrqt"]
-[ext_resource type="Texture2D" uid="uid://b7063cdmdq1p1" path="res://assets/tile_0070.png" id="2_erc8l"]
-[ext_resource type="Texture2D" uid="uid://dobnnxp7nos3u" path="res://assets/tile_0071.png" id="3_jkv4c"]
+[ext_resource type="Texture2D" uid="uid://cule7phv45pcq" path="res://assets/fonts_icons/icons/pause.svg" id="1_mjrqt"]
+[ext_resource type="Texture2D" uid="uid://b7063cdmdq1p1" path="res://assets/fonts_icons/buttons/jump_icon.png" id="2_erc8l"]
+[ext_resource type="Texture2D" uid="uid://dobnnxp7nos3u" path="res://assets/fonts_icons/buttons/duck_icon.png" id="3_jkv4c"]
 
 [node name="MobileControls" type="CanvasLayer" unique_id=2097484926]
 

@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://c20ddirnyh140" path="res://scripts/menus/credits_menu.gd" id="1_xtkoc"]
 [ext_resource type="FontFile" uid="uid://cw0hfw4sjeamc" path="res://assets/fonts_icons/VT323-Regular.ttf" id="2_d74go"]
-[ext_resource type="Texture2D" uid="uid://ddlel4ud1fcqk" path="res://assets/fonts_icons/close_200dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.svg" id="3_325oc"]
-[ext_resource type="Texture2D" uid="uid://bx6ipascgv4q1" path="res://assets/fonts_icons/cancel_200dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.svg" id="4_d74go"]
+[ext_resource type="Texture2D" uid="uid://bibqyx5hj6br8" path="res://assets/fonts_icons/buttons/close.png" id="3_d74go"]
+[ext_resource type="Texture2D" uid="uid://dwmxxs1c7aydw" path="res://assets/fonts_icons/buttons/close_hover.png" id="4_325oc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wywfy"]
 bg_color = Color(0.76862746, 0.61960787, 0.5137255, 1)
@@ -62,14 +62,16 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -96.0
-offset_top = 96.0
+offset_top = 102.0
 offset_right = 96.0
-offset_bottom = 136.0
+offset_bottom = 142.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.16078432, 0.16078432, 0.16078432, 1)
 theme_override_fonts/font = ExtResource("2_d74go")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 35
 text = "Assets used:"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="List" type="RichTextLabel" parent="ColorRect" unique_id=237646734]
 layout_mode = 1
@@ -86,31 +88,38 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_colors/default_color = Color(0.16078432, 0.16078432, 0.16078432, 1)
 theme_override_fonts/normal_font = ExtResource("2_d74go")
-theme_override_font_sizes/normal_font_size = 25
-text = "BG: \"Green Meadow pixel Background in 4 layers\" by Clow
+theme_override_font_sizes/normal_font_size = 20
+text = "Background - \"Green Meadow pixel Background in 4 layers\" by Clow on itch.io (https://clow13.itch.io/green-meadow-pixel-background-in-4-layers) Used with permission (personal and commercial use; no redistribution)
 
-Player animations: \"Pigeon Pixel\" by kangjung
+Player animations - \"Pigeon Pixel\" by kangjung on itch.io (https://kangjung.itch.io/pigeon-pixel) Used with permission (personal and commercial use; no redistribution)
 
-Rock/ground obstacle: from \"Tiny Farm\" by Kenney.nl
+Rock/ground obstacle - \"Tiny Farm\" from Kenny.nl (https://kenney.nl/assets/tiny-farm) License: Creative Commons 0
 
-Bird/flying obstacle: \"FREE Bird flying pixel art animation\" by ankousse26
+Bird/flying obstacle - \"FREE Bird flying pixel art animation\" by ankousse26 on itch.io (https://ankousse26.itch.io/bird-flying-pixel-art-animation-free) License: License for Everyone; used with permission (personal and commercial use; no resdistribution)
 
-Font: \"VT323\" from Google Fonts designed by Peter Hull
+Mobile control buttons - \"Cursor Pixel Pack\" from Kenney.nl (https://kenney.nl/assets/cursor-pixel-pack) License: Creative Commons 0
 
-Icons: \"Close\" icon, \"Pause\" icon, and \"Emoji Objects\" Tutorial icon from Google Fonts
+Font - VT323 from Google Fonts designed by Peter Hull (https://fonts.google.com/specimen/VT323?preview.script=Latn) License: SIL Open Font License, Version 1.1
 
-BG Music: \"New Life\" from \"Cozy Sim Music Pack [Town Life] - Tiny Pack\" by Rest!
+Icons - \"Close\", \"Cancel\", \"Pause\" and \"Emoji Objects\" from Google Fonts (https://fonts.google.com/icons) License: Apache License Version 2.0
 
-Jump SFX: \"Cartoon.wav\" by Bastianhallo
 
-Duck SFX: \"Retro video game sfx - Hop\" by OwlStorm
+Music/sound effects:
 
-Lose SFX: \"Retro arcade video game descending, lose life tone\" by alanmcki"
+Background music - \"New Life\" from \"Cozy Sim Music Pack [Town Life] - Tiny Pack\" by Rest! on itch.io (https://richarrest.itch.io/cozy-sim-music-pack-town-life) License: Attribution-ShareAlike 4.0
+
+Jump sound effect - \"Cartoon jump.wav\" by Bastianhallo on Freesound (https://freesound.org/people/Bastianhallo/sounds/462958/) License: Creative Commons 0
+
+Duck sound effect - \"Retro video game sfx - Hop\" by OwlStorm on Freesound (https://freesound.org/people/OwlStorm/sounds/404794/)  License: Creative Commons 0
+
+Lose sound effect - \"Retro arcade video game descending, lose life tone\" by alanmcki on Freesound (https://freesound.org/s/400581/) License: Attribution 4.0
+"
 autowrap_mode = 2
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="CreditsExitButton" type="TextureButton" parent="." unique_id=2058229823]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -120,7 +129,8 @@ offset_top = -197.0
 offset_right = 370.0
 offset_bottom = -149.0
 grow_horizontal = 2
-texture_normal = ExtResource("3_325oc")
-texture_hover = ExtResource("4_d74go")
+texture_normal = ExtResource("3_d74go")
+texture_hover = ExtResource("4_325oc")
+stretch_mode = 0
 
 [connection signal="pressed" from="CreditsExitButton" to="." method="_on_credits_exit_button_pressed"]

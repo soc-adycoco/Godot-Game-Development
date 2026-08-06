@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cgwdg75nqeebd"]
 
 [ext_resource type="Script" uid="uid://byehlt6hccw3s" path="res://scripts/obstacles/ground_obstacle.gd" id="1_f086t"]
-[ext_resource type="Texture2D" uid="uid://0pdx3ge3y0nh" path="res://assets/obstacles/tile_0089.png" id="2_jt3bx"]
+[ext_resource type="Texture2D" uid="uid://0pdx3ge3y0nh" path="res://assets/obstacles/rock.png" id="2_jt3bx"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6ihi1"]
 radius = 40.1995

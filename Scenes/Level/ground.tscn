@@ -1,18 +1,16 @@
 [gd_scene format=3 uid="uid://bda75hncsfvb0"]
 
-[ext_resource type="Texture2D" uid="uid://xehqldkh1kgb" path="res://assets/background/backgroundColorDesert.png" id="1_688p1"]
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oltiy"]
 size = Vector2(3069.5, 98.5)
 
 [node name="Ground" type="StaticBody2D" unique_id=803207055]
 
-[node name="Image" type="Sprite2D" parent="." unique_id=1019066439]
-texture = ExtResource("1_688p1")
-centered = false
-offset = Vector2(0, 552)
-region_enabled = true
-region_rect = Rect2(0, 928, 3072, 96)
+[node name="Image" type="ColorRect" parent="." unique_id=818168922]
+offset_left = 3.0
+offset_top = 553.0
+offset_right = 3072.0
+offset_bottom = 649.0
+color = Color(0.9411765, 0.8901961, 0.7607843, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1888585567]
 position = Vector2(1537.25, 601.25)

@@ -75,6 +75,15 @@ func _process(_delta: float) -> void:
 		if Input.is_action_pressed("ui_accept"):
 			game_running = true
 			$HUD.get_node("StartLabel").hide()
+		
+
+# Pauses the game if ESC key or pause button is pressed
+func _unhandled_input(_event: InputEvent) -> void:
+	if game_running:
+		if Input.is_action_just_pressed("Pause"):
+			get_tree().paused = !get_tree().paused
+			$PauseMenu.show()
+			$PauseMenu.visible = get_tree().paused
 
 
 func spawn_obstacle():

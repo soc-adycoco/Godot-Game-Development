@@ -1,12 +1,5 @@
 extends CanvasLayer
 
-func _unhandled_input(_event: InputEvent) -> void:
-	# Pauses the game if ESC key or pause button is pressed
-	if Input.is_action_just_pressed("Pause"):
-		get_tree().paused = !get_tree().paused
-		visible = get_tree().paused
-
-
 
 # Codes the function of the buttons
 func resume():

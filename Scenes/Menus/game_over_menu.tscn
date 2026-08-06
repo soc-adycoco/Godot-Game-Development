@@ -4,7 +4,7 @@
 
 [node name="GameOverMenu" type="CanvasLayer" unique_id=1156535089]
 
-[node name="Label" type="Label" parent="." unique_id=2006333856]
+[node name="Header" type="Label" parent="." unique_id=2006333856]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -23,6 +23,25 @@ text = "Game Over"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Subheader" type="Label" parent="." unique_id=273811389]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -216.0
+offset_top = -102.0
+offset_right = 216.0
+offset_bottom = -62.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.16078432, 0.16078432, 0.16078432, 1)
+theme_override_fonts/font = ExtResource("1_arass")
+theme_override_font_sizes/font_size = 45
+text = "Oh no! You hit an obstacle."
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="RestartButton" type="Button" parent="." unique_id=1869287100]
 process_mode = 3
 anchors_preset = 8
@@ -31,9 +50,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -101.25
-offset_top = -43.75
+offset_top = -35.75
 offset_right = 101.25
-offset_bottom = 75.75
+offset_bottom = 83.75
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4

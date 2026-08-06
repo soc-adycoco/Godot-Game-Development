@@ -1,16 +1,17 @@
 Assets used:
 
-Background - "Green Meadow pixel Background in 4 layers" by Clow -- https://clow13.itch.io/green-meadow-pixel-background-in-4-layers -- License:
-Player animations - "Pigeon Pixel" by kangjung -- https://kangjung.itch.io/pigeon-pixel -- License:
-Rock/ground obstacle - "Tiny Farm" by Kenny.nl -- https://kenney.nl/assets/tiny-farm -- License:
-Bird/flying obstacle - "FREE Bird flying pixel art animation" by ankousse26 -- https://ankousse26.itch.io/bird-flying-pixel-art-animation-free -- License:
-Font - VT323 from Google Fonts designed by Peter Hull -- https://fonts.google.com/specimen/VT323?preview.script=Latn -- License: SIL Open Font License, Version 1.1
-Icons - "Close", "Cancel", and "Emoji Objects" by Google Fonts -- https://fonts.google.com/icons -- License: 
+Background - "Green Meadow pixel Background in 4 layers" by Clow on itch.io (https://clow13.itch.io/green-meadow-pixel-background-in-4-layers) Used with permission (personal and commercial use; no redistribution)
+Player animations - "Pigeon Pixel" by kangjung on itch.io (https://kangjung.itch.io/pigeon-pixel) Used with permission (personal and commercial use; no redistribution)
+Rock/ground obstacle - "Tiny Farm" from Kenny.nl (https://kenney.nl/assets/tiny-farm) License: Creative Commons 0
+Bird/flying obstacle - "FREE Bird flying pixel art animation" by ankousse26 on itch.io (https://ankousse26.itch.io/bird-flying-pixel-art-animation-free) License: License for Everyone; used with permission (personal and commercial use; no resdistribution)
+Mobile control buttons - "Cursor Pixel Pack" from Kenney.nl (https://kenney.nl/assets/cursor-pixel-pack) License: Creative Commons 0
+Font - VT323 from Google Fonts designed by Peter Hull (https://fonts.google.com/specimen/VT323?preview.script=Latn) License: SIL Open Font License, Version 1.1
+Icons - "Close", "Cancel", "Pause" and "Emoji Objects" from Google Fonts (https://fonts.google.com/icons) License: Apache License Version 2.0
 
 
 Music/sound effects:
 
-Background music - "New Life" from "Cozy Sim Music Pack [Town Life] - Tiny Pack" by Rest! -- https://richarrest.itch.io/cozy-sim-music-pack-town-life -- License: Attribution-ShareAlike 4.0
-Jump sound effect - "Cartoon jump.wav" by Bastianhallo -- https://freesound.org/people/Bastianhallo/sounds/462958/ -- License: Creative Commons 0
-Duck sound effect - "Retro video game sfx - Hop" by OwlStorm -- https://freesound.org/people/OwlStorm/sounds/404794/ -- License: Creative Commons 0
-Lose sound effect - "Retro arcade video game descending, lose life tone" by alanmcki -- https://freesound.org/s/400581/ -- License: Attribution 4.0
+Background music - "New Life" from "Cozy Sim Music Pack [Town Life] - Tiny Pack" by Rest! on itch.io (https://richarrest.itch.io/cozy-sim-music-pack-town-life) License: Attribution-ShareAlike 4.0
+Jump sound effect - "Cartoon jump.wav" by Bastianhallo on Freesound (https://freesound.org/people/Bastianhallo/sounds/462958/) License: Creative Commons 0
+Duck sound effect - "Retro video game sfx - Hop" by OwlStorm on Freesound (https://freesound.org/people/OwlStorm/sounds/404794/) License: Creative Commons 0
+Lose sound effect - "Retro arcade video game descending, lose life tone" by alanmcki on Freesound (https://freesound.org/s/400581/) License: Attribution 4.0
