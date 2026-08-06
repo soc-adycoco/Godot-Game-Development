@@ -6,9 +6,9 @@ size = Vector2(3069.5, 98.5)
 [node name="Ground" type="StaticBody2D" unique_id=803207055]
 
 [node name="Image" type="ColorRect" parent="." unique_id=818168922]
-offset_left = 3.0
+offset_left = 1.0
 offset_top = 553.0
-offset_right = 3072.0
+offset_right = 3070.0
 offset_bottom = 649.0
 color = Color(0.9411765, 0.8901961, 0.7607843, 1)
 

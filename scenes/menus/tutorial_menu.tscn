@@ -136,7 +136,7 @@ grow_vertical = 0
 theme_override_colors/font_color = Color(0.16078432, 0.16078432, 0.16078432, 1)
 theme_override_fonts/font = ExtResource("1_eosj5")
 theme_override_font_sizes/font_size = 30
-text = "Jump and duck  to avoid obstacles.
+text = "Jump and duck to avoid obstacles.
 (Jump: W key/up arrow key/spacebar/on screen up button)
 (Duck: hold down S/down arrow key/on screen down button)
 Survive for as long as you can!"

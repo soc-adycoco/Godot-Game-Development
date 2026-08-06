@@ -72,11 +72,11 @@ func _process(_delta: float) -> void:
 		
 	else:
 		# Wait for the player to press a key before the run starts
-		if Input.is_action_pressed("ui_accept"):
+		if Input.is_action_pressed("Jump") or Input.is_action_pressed("Duck"):
 			game_running = true
 			$HUD.get_node("StartLabel").hide()
 		
-
+	
 # Pauses the game if ESC key or pause button is pressed
 func _unhandled_input(_event: InputEvent) -> void:
 	if game_running:
