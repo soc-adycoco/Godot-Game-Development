@@ -48,7 +48,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ntek2"]
-size = Vector2(100, 64)
+size = Vector2(95, 50)
 
 [node name="FlyingObstacle" type="Area2D" unique_id=278548053]
 script = SubResource("GDScript_4eb7l")
@@ -60,12 +60,12 @@ sprite_frames = SubResource("SpriteFrames_2vbwf")
 animation = &"enemy_fly"
 autoplay = "enemy_fly"
 frame = 6
-frame_progress = 0.74301594
+frame_progress = 0.20490676
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1537684294]
-position = Vector2(-10, -24)
+position = Vector2(-10.5, -25)
 shape = SubResource("RectangleShape2D_ntek2")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=972127472]
 position = Vector2(-48, -40)
-rect = Rect2(-10, -10, 98, 58)
+rect = Rect2(-10, -10, 95, 50)

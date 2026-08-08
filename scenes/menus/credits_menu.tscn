@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dwmxxs1c7aydw" path="res://assets/fonts_icons/buttons/close_hover.png" id="4_325oc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wywfy"]
-bg_color = Color(0.76862746, 0.61960787, 0.5137255, 1)
+bg_color = Color(0.81960785, 0.69803923, 0.61960787, 1)
 
 [node name="Credits" type="Control" unique_id=1985810252]
 layout_mode = 3
@@ -48,7 +48,7 @@ offset_top = 24.0
 offset_right = 163.25
 offset_bottom = 97.75
 grow_horizontal = 2
-theme_override_colors/font_color = Color(0.16206557, 0.1620656, 0.16206557, 1)
+theme_override_colors/font_color = Color(0.16078432, 0.16078432, 0.16078432, 1)
 theme_override_fonts/font = ExtResource("2_d74go")
 theme_override_font_sizes/font_size = 70
 theme_override_styles/normal = SubResource("StyleBoxFlat_wywfy")

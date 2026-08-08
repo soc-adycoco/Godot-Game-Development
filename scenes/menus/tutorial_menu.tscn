@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dwmxxs1c7aydw" path="res://assets/fonts_icons/buttons/close_hover.png" id="9_eju2k"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mwl7n"]
-bg_color = Color(0.76862746, 0.61960787, 0.5137255, 1)
+bg_color = Color(0.81960785, 0.69803923, 0.61960787, 1)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jh4fd"]
 atlas = ExtResource("5_xkjag")

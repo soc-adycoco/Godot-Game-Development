@@ -18,7 +18,7 @@ position = Vector2(0, -72)
 [node name="Ground" parent="." unique_id=803207055 instance=ExtResource("1_6phgx")]
 
 [node name="Player" parent="." unique_id=1758742537 instance=ExtResource("1_k5f4k")]
-position = Vector2(258, 455)
+position = Vector2(250, 455)
 
 [node name="Camera" type="Camera2D" parent="." unique_id=1602047086]
 position = Vector2(576, 324)

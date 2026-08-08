@@ -8,9 +8,11 @@
 
 [node name="TitleScreen" type="Control" unique_id=515661801]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 1152.0
-offset_bottom = 648.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_yx444")
 
 [node name="Background" type="TextureRect" parent="." unique_id=465799678]
@@ -34,7 +36,7 @@ offset_right = 176.75
 offset_bottom = -138.75
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(0.16206557, 0.1620656, 0.16206557, 1)
+theme_override_colors/font_color = Color(0.16078432, 0.16078432, 0.16078432, 1)
 theme_override_fonts/font = ExtResource("3_vudbd")
 theme_override_font_sizes/font_size = 90
 text = "Bird Runner"

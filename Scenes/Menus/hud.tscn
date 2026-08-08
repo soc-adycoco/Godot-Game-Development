@@ -4,38 +4,47 @@
 [ext_resource type="PackedScene" uid="uid://cyfoeijr3pnpq" path="res://scenes/menus/mobile_controls.tscn" id="3_lf75b"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tfgnj"]
-bg_color = Color(0.90359825, 0.90359825, 0.9035982, 1)
+bg_color = Color(0.82521373, 0.8252193, 0.8341692, 1)
 
-[node name="HUD" type="CanvasLayer" unique_id=1972929521]
+[node name="HUD" type="Control" unique_id=300342812]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="ScoreLabel" type="Label" parent="." unique_id=455305018]
-offset_right = 266.0
-offset_bottom = 109.0
-theme_override_colors/font_color = Color(0.28235295, 0.23529412, 0.27450982, 1)
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1243774173]
+
+[node name="ScoreLabel" type="Label" parent="CanvasLayer" unique_id=455305018]
+offset_left = 56.0
+offset_top = 16.0
+offset_right = 224.0
+offset_bottom = 125.0
+theme_override_colors/font_color = Color(0.16078432, 0.16078432, 0.16078432, 1)
 theme_override_fonts/font = ExtResource("1_e0onf")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 60
 text = "Score: "
-horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="StartLabel" type="Label" parent="." unique_id=1268472449]
+[node name="MobileControls" parent="CanvasLayer" unique_id=2097484926 instance=ExtResource("3_lf75b")]
+
+[node name="StartLabel" type="Label" parent="CanvasLayer" unique_id=1484354722]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -214.0
-offset_top = -31.5
-offset_right = 214.0
-offset_bottom = 31.5
+offset_left = -227.0
+offset_top = -25.0
+offset_right = 227.0
+offset_bottom = 25.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(0.28235295, 0.23529412, 0.27450982, 1)
+theme_override_colors/font_color = Color(0.16078432, 0.16078432, 0.16078432, 1)
 theme_override_fonts/font = ExtResource("1_e0onf")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_tfgnj")
-text = "Jump or Duck to Play!"
+text = "Jump or duck to play!"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="MobileControls" parent="." unique_id=2097484926 instance=ExtResource("3_lf75b")]

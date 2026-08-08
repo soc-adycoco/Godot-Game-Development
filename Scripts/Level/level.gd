@@ -1,7 +1,7 @@
 extends Node2D
 
-var ground_obstacle_scene = preload("res://scenes/Obstacles/ground_obstacle.tscn")
-var flying_obstacle_scene = preload("res://scenes/Obstacles/flying_obstacle.tscn")
+var ground_obstacle_scene = preload("res://scenes/obstacles/ground_obstacle.tscn")
+var flying_obstacle_scene = preload("res://scenes/obstacles/flying_obstacle.tscn")
 var obstacles = [ground_obstacle_scene, flying_obstacle_scene]
 
 # Variables and constants
@@ -27,8 +27,8 @@ func _ready() -> void:
 	ground_original_pos = $Ground.position
 	
 	# Restart the game after pressing restart button
-	$GameOverMenu.get_node("RestartButton").pressed.connect(new_game)
-	$PauseMenu.get_node("VBoxContainer/Restart").pressed.connect(new_game)
+	$GameOverMenu/RestartButton.pressed.connect(new_game)
+	$PauseMenu/VBoxContainer/Restart.pressed.connect(new_game)
 
 # Reset/start fresh for each new game
 func new_game():
@@ -44,8 +44,8 @@ func new_game():
 	$Camera.position = camera_original_pos
 	$Ground.position = ground_original_pos
 	
-	# Show start message and hide game over screen and pause menu
-	$HUD.get_node("StartLabel").show()
+	# Show start message and hide game over screen, pause menu, and play button
+	$HUD/CanvasLayer/StartLabel.show()
 	$GameOverMenu.hide()
 	$PauseMenu.hide()
 
@@ -56,6 +56,8 @@ func _on_obstacle_spawn_timer_timeout() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	if game_running:
+		$HUD/CanvasLayer/StartLabel.hide()
+		
 		# Set speed
 		speed = START_SPEED
 		
@@ -65,18 +67,12 @@ func _process(_delta: float) -> void:
 		score += speed
 		show_score()
 		
-		# Shift the ground to the right if the player and camera moves too far
-		if $Camera.position.x - $Ground.position.x > screen_size.x * 1.5:
-			$Ground.position.x += screen_size.x
-		
-		
 	else:
 		# Wait for the player to press a key before the run starts
 		if Input.is_action_pressed("Jump") or Input.is_action_pressed("Duck"):
 			game_running = true
-			$HUD.get_node("StartLabel").hide()
-		
-	
+
+
 # Pauses the game if ESC key or pause button is pressed
 func _unhandled_input(_event: InputEvent) -> void:
 	if game_running:
@@ -121,7 +117,7 @@ func hit_obstacle(body):
 # Display the modified score (not increasing as rapidly) on the game's HUD
 func show_score():
 	@warning_ignore("integer_division")
-	$HUD.get_node("ScoreLabel").text = "Score: " + str(score / 10)
+	$HUD/CanvasLayer/ScoreLabel.text = "Score: " + str(score / 10)
 
 # Player loses after they hit an obstacle
 func game_over():

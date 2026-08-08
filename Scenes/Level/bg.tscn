@@ -5,12 +5,21 @@
 [node name="BG" type="Node2D" unique_id=1052043576]
 
 [node name="Sky" type="Parallax2D" parent="." unique_id=1397888224]
-repeat_size = Vector2(1150, 0)
+repeat_size = Vector2(2300, 0)
 
 [node name="SkyImg" type="Sprite2D" parent="Sky" unique_id=1992646609]
 scale = Vector2(2.9999998, 2.5312498)
 texture = ExtResource("1_sjcup")
 centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 384, 256)
+
+[node name="SkyImgFlipped" type="Sprite2D" parent="Sky" unique_id=972634491]
+position = Vector2(1152, 0)
+scale = Vector2(2.9999998, 2.5312498)
+texture = ExtResource("1_sjcup")
+centered = false
+flip_h = true
 region_enabled = true
 region_rect = Rect2(0, 0, 384, 256)
 
@@ -43,7 +52,7 @@ repeat_size = Vector2(2300, 0)
 
 [node name="HillsImg" type="Sprite2D" parent="Hills" unique_id=293423850]
 texture_filter = 1
-position = Vector2(0, -112)
+position = Vector2(0, -112.00001)
 scale = Vector2(3, 2.794118)
 texture = ExtResource("1_sjcup")
 centered = false
