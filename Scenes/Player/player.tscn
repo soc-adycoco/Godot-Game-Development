@@ -133,6 +133,7 @@ texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_l6n3p")
 animation = &"run"
 autoplay = "run"
+frame_progress = 0.17852695
 
 [node name="RunCollision" type="CollisionShape2D" parent="." unique_id=39531646]
 position = Vector2(2.666667, 0)

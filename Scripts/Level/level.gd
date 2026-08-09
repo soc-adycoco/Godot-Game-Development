@@ -5,10 +5,10 @@ var flying_obstacle_scene = preload("res://scenes/obstacles/flying_obstacle.tscn
 var obstacles = [ground_obstacle_scene, flying_obstacle_scene]
 
 # Variables and constants
-var speed = 0
-const START_SPEED = 8
+var speed = 700
 var screen_size
 var score = 0
+const SCORE_INCREASE = 8
 var game_running : bool
 
 var player_original_pos
@@ -54,17 +54,14 @@ func _on_obstacle_spawn_timer_timeout() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta: float) -> void:
+func _process(delta: float) -> void:
 	if game_running:
 		$HUD/CanvasLayer/StartLabel.hide()
 		
-		# Set speed
-		speed = START_SPEED
-		
 		# Move the player and camera and increase score based on the set speed
-		$Player.position.x += speed
-		$Camera.position.x += speed
-		score += speed
+		$Player.position.x += speed * delta
+		$Camera.position.x += speed * delta
+		score += SCORE_INCREASE
 		show_score()
 		
 	else:

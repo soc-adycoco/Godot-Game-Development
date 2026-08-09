@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cyfoeijr3pnpq" path="res://scenes/menus/mobile_controls.tscn" id="3_lf75b"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tfgnj"]
-bg_color = Color(0.82521373, 0.8252193, 0.8341692, 1)
+bg_color = Color(0.9019608, 0.9019608, 0.9019608, 1)
 
 [node name="HUD" type="Control" unique_id=300342812]
 layout_mode = 3

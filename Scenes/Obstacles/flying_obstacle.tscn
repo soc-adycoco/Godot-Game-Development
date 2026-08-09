@@ -1,22 +1,13 @@
 [gd_scene format=3 uid="uid://bltp1xlwrhdll"]
 
 [ext_resource type="Texture2D" uid="uid://dsyuh45t3xcuc" path="res://assets/obstacles/enemy_bird/01.png" id="1_1mb8k"]
+[ext_resource type="Script" uid="uid://b1vudmys51quy" path="res://scripts/obstacles/flying_obstacle.gd" id="1_86fju"]
 [ext_resource type="Texture2D" uid="uid://bqnjwlhrmyig5" path="res://assets/obstacles/enemy_bird/02.png" id="2_t82s0"]
 [ext_resource type="Texture2D" uid="uid://bx7jiygg8cpb4" path="res://assets/obstacles/enemy_bird/03.png" id="3_necj0"]
 [ext_resource type="Texture2D" uid="uid://rhhac3fgr2l8" path="res://assets/obstacles/enemy_bird/04.png" id="4_a7235"]
 [ext_resource type="Texture2D" uid="uid://btsua5kmy432r" path="res://assets/obstacles/enemy_bird/05.png" id="5_0ik7f"]
 [ext_resource type="Texture2D" uid="uid://dkg71paweo4bu" path="res://assets/obstacles/enemy_bird/06.png" id="6_nxiaa"]
 [ext_resource type="Texture2D" uid="uid://bhxlyjbaq2s7m" path="res://assets/obstacles/enemy_bird/07.png" id="7_uh2da"]
-
-[sub_resource type="GDScript" id="GDScript_4eb7l"]
-script/source = "# Inherits the ground obstacle's script
-extends Obstacle
-
-func _physics_process(_delta: float) -> void:
-	$Sprite2D.play(\"enemy_fly\")
-	# Flying obstacles move faster so not overlap with ground obstacles
-	position.x -= speed / 2
-"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2vbwf"]
 animations = [{
@@ -51,7 +42,7 @@ animations = [{
 size = Vector2(95, 50)
 
 [node name="FlyingObstacle" type="Area2D" unique_id=278548053]
-script = SubResource("GDScript_4eb7l")
+script = ExtResource("1_86fju")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=133422061]
 texture_filter = 1
@@ -69,3 +60,5 @@ shape = SubResource("RectangleShape2D_ntek2")
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=972127472]
 position = Vector2(-48, -40)
 rect = Rect2(-10, -10, 95, 50)
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

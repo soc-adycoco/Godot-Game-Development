@@ -3,7 +3,7 @@
 [ext_resource type="FontFile" uid="uid://cw0hfw4sjeamc" path="res://assets/fonts_icons/VT323-Regular.ttf" id="1_arass"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7ldfy"]
-bg_color = Color(0.8235294, 0.8235294, 0.8352941, 1)
+bg_color = Color(0.9019608, 0.9019608, 0.9019608, 1)
 
 [node name="GameOverMenu" type="CanvasLayer" unique_id=1156535089]
 

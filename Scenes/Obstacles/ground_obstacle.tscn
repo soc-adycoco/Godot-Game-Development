@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://byehlt6hccw3s" path="res://scripts/obstacles/ground_obstacle.gd" id="1_f086t"]
 [ext_resource type="Texture2D" uid="uid://0pdx3ge3y0nh" path="res://assets/obstacles/rock.png" id="2_jt3bx"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_6ihi1"]
-radius = 40.1995
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f086t"]
+size = Vector2(56, 64)
 
 [node name="GroundObstacle" type="Area2D" unique_id=2062863384]
 script = ExtResource("1_f086t")
@@ -15,8 +15,8 @@ scale = Vector2(6, 6)
 texture = ExtResource("2_jt3bx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1089315293]
-position = Vector2(0, 4)
-shape = SubResource("CircleShape2D_6ihi1")
+position = Vector2(-4, 8)
+shape = SubResource("RectangleShape2D_f086t")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=669747312]
 position = Vector2(-24, -16)

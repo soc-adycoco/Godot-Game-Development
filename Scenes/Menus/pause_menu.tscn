@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dtugrsuhmilcv" path="res://scripts/menus/pause_menu.gd" id="1_k0w1u"]
 [ext_resource type="FontFile" uid="uid://cw0hfw4sjeamc" path="res://assets/fonts_icons/VT323-Regular.ttf" id="2_1och7"]
+[ext_resource type="PackedScene" uid="uid://dw6fwq4t0yh00" path="res://scenes/menus/tutorial_menu.tscn" id="3_gsnt3"]
 
 [node name="PauseMenu" type="CanvasLayer" unique_id=1478476724]
 process_mode = 3
@@ -32,9 +33,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -166.0
-offset_top = -130.75
+offset_top = -144.875
 offset_right = 166.0
-offset_bottom = 178.75
+offset_bottom = 224.875
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 4
@@ -61,6 +62,17 @@ theme_override_fonts/font = ExtResource("2_1och7")
 theme_override_font_sizes/font_size = 50
 text = "Home"
 
+[node name="Tutorial" type="Button" parent="VBoxContainer" unique_id=1468620399]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_1och7")
+theme_override_font_sizes/font_size = 50
+text = "Tutorial"
+
+[node name="Tutorial" parent="." unique_id=1734833353 instance=ExtResource("3_gsnt3")]
+visible = false
+
 [connection signal="pressed" from="VBoxContainer/Resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="VBoxContainer/Restart" to="." method="_on_restart_pressed"]
 [connection signal="pressed" from="VBoxContainer/Home" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="VBoxContainer/Tutorial" to="." method="_on_tutorial_pressed"]

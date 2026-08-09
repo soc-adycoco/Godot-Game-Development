@@ -1,16 +1,12 @@
 extends Area2D
-# The flying obstacle inherits the same controls
+# The flying obstacle inherits the same speed variable
 class_name Obstacle
 
-var speed = 8.0
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+var speed = 200.0
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta: float) -> void:
-	position.x -= speed
+func _physics_process(delta: float) -> void:
+	position.x -= speed * delta
 
 # Removes the spawned obstacles once they exit the screen
 func _on_visible_on_screen_notifier_2d_screen_exited() -> void:

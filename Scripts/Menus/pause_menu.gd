@@ -14,3 +14,7 @@ func _on_resume_pressed() -> void:
 func _on_home_pressed() -> void:
 	get_tree().paused = false
 	get_tree().change_scene_to_file("res://scenes/menus/title_screen.tscn")
+
+
+func _on_tutorial_pressed() -> void:
+	$Tutorial.show()
