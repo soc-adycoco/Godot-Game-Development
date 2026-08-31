@@ -21,6 +21,7 @@ const GROUND_Y = 515
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	screen_size = get_window().size
+	show_score()
 	# Set player, camera, and ground positions to current positions
 	player_original_pos = $Player.position
 	camera_original_pos = $Camera.position
