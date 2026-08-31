@@ -91,6 +91,7 @@ func spawn_obstacle():
 			# Spawn the obstacles to the right of the game window
 			var current_spawn_x = $Camera.position.x + screen_size.x + (i * 100)
 			
+			
 			if chosen_obstacle == flying_obstacle_scene:
 				# Spawn the flying obstacle at one of the two heights
 				var flying_y = flying_height.pick_random()

@@ -118,11 +118,11 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3smsa"]
-radius = 6.5996633
-height = 28.284271
+radius = 5.6568537
+height = 26.398653
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_olqyp"]
-size = Vector2(12, 18.833336)
+size = Vector2(8, 18.833336)
 
 [node name="Player" type="CharacterBody2D" unique_id=1758742537]
 scale = Vector2(6, 6)
@@ -136,12 +136,12 @@ autoplay = "run"
 frame_progress = 0.17852695
 
 [node name="RunCollision" type="CollisionShape2D" parent="." unique_id=39531646]
-position = Vector2(2.666667, 0)
+position = Vector2(1.3333333, 0)
 rotation = 0.7853982
 shape = SubResource("CapsuleShape2D_3smsa")
 
 [node name="DuckCollision" type="CollisionShape2D" parent="." unique_id=84433812]
-position = Vector2(-3.3333335, 6.583332)
+position = Vector2(-2.6666667, 6.583332)
 shape = SubResource("RectangleShape2D_olqyp")
 
 [node name="JumpSFX" type="AudioStreamPlayer2D" parent="." unique_id=1303781161]
