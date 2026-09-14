@@ -20,7 +20,7 @@ position = Vector2(816, 644)
 shape = SubResource("RectangleShape2D_oltiy")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=54591189]
-position = Vector2(624, 560)
+position = Vector2(880, 568)
 rect = Rect2(-10, -10, 266, 82)
 
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
