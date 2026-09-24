@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dal5651moa8j3" path="res://scripts/level/ground.gd" id="1_vsghh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oltiy"]
-size = Vector2(3232, 184)
+size = Vector2(5088, 184)
 
 [node name="Ground" type="StaticBody2D" unique_id=803207055]
 script = ExtResource("1_vsghh")
@@ -11,16 +11,16 @@ script = ExtResource("1_vsghh")
 [node name="Image" type="ColorRect" parent="." unique_id=818168922]
 offset_left = -800.0
 offset_top = 553.0
-offset_right = 2438.0
+offset_right = 4288.0
 offset_bottom = 736.0
 color = Color(0.9411765, 0.8901961, 0.7607843, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1888585567]
-position = Vector2(816, 644)
+position = Vector2(1744, 644)
 shape = SubResource("RectangleShape2D_oltiy")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=54591189]
-position = Vector2(880, 568)
-rect = Rect2(-10, -10, 266, 82)
+position = Vector2(888, 568)
+rect = Rect2(184, -10, 72, 82)
 
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
